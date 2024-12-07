@@ -5,28 +5,51 @@
       <img src="/icons/closeIcon.svg" height="20px" width="20px" />
     </button>
     <nav class="flex h-screen flex-col items-center justify-center">
-      <a href="#" class="mb-4 text-lg text-white">Home</a>
-      <a href="#" class="mb-4 text-lg text-white">About</a>
-      <a href="#" class="mb-4 text-lg text-white">Projects</a>
-      <a href="#" class="text-lg text-white">Contact</a>
+      <a href="#" class="mb-4 text-lg text-lighttext">Home</a>
+      <a href="#" class="mb-4 text-lg text-lighttext">About</a>
+      <a href="#" class="mb-4 text-lg text-lighttext">Projects</a>
+      <a href="#" class="text-lg text-lighttext">Contact</a>
     </nav>
   </div>
   } @else {
-  <div class="flex justify-evenly">
-    <div>
-      <h1 class="text-white text-sm font-poppins lg:text-xl">
-        Hello, I'm Thibault Beaumont
-      </h1>
-      <h2
-        class="text-base font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-2xl"
+  <div class="hidden md:block lg:block fixed h-screen inset-5">
+    <nav class="absolute right-10 top-0 flex gap-5">
+      <a href="#" class="mb-4 text-base text-lighttext hover:text-primary"
+        >Home</a
       >
-        I'm a web developer
-      </h2>
-    </div>
-    <div class="block md:hidden lg:hidden relative">
-      <button class="text-white" (click)="toggle()">
-        <img src="/icons/burgerIcon.svg" height="20px" width="20px" />
-      </button>
+      <a href="#" class="mb-4 text-base text-lighttext hover:text-primary"
+        >About</a
+      >
+      <a href="#" class="mb-4 text-base text-lighttext hover:text-primary"
+        >Projects</a
+      >
+      <a href="#" class="text-base text-lighttext hover:text-primary"
+        >Contact</a
+      >
+    </nav>
+  </div>
+  <div class="container mx-auto">
+    <div class="flex justify-evenly">
+      <div class="flex flex-col items-start justify-center gap-1">
+        <h1 class="text-white text-sm font-poppins lg:text-2xl">
+          Hello, I'm Thibault Beaumont
+        </h1>
+        <h2
+          class="text-base font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
+        >
+          I'm a web developer
+        </h2>
+      </div>
+      <img
+        src="/assets/rocket.avif"
+        alt="rocket"
+        class="hidden max-w-96 max-h-96 md:block lg:block"
+      />
+      <div class="block md:hidden lg:hidden relative">
+        <button class="text-white" (click)="toggle()">
+          <img src="/icons/burgerIcon.svg" height="20px" width="20px" />
+        </button>
+      </div>
     </div>
   </div>
   }
