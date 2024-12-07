@@ -9,11 +9,10 @@ module.exports = {
         primary: "#E91E63",
         accent: "#00BCD4",
         lighttext: "#B0BEC5",
+        darkBackground: "#121212",
+        purpleBackground: "#6A1B9A",
       },
-      background: {
-        primary: "#121212",
-        secondary: "#6A1B9A",
-      },
+      background: {},
       fontSize: {
         sm: "0.8rem",
         base: "1rem",

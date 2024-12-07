@@ -1,4 +1,17 @@
 <section class="flex flex-col justify-center h-screen">
+  @if (isOpen) {
+  <div class="fixed h-screen inset-0 bg-darkBackground">
+    <button class="text-white absolute right-5 top-5" (click)="toggle()">
+      <img src="/icons/closeIcon.svg" height="20px" width="20px" />
+    </button>
+    <nav class="flex h-screen flex-col items-center justify-center">
+      <a href="#" class="mb-4 text-lg text-white">Home</a>
+      <a href="#" class="mb-4 text-lg text-white">About</a>
+      <a href="#" class="mb-4 text-lg text-white">Projects</a>
+      <a href="#" class="text-lg text-white">Contact</a>
+    </nav>
+  </div>
+  } @else {
   <div class="flex justify-evenly">
     <div>
       <h1 class="text-white text-sm font-poppins lg:text-xl">
@@ -10,8 +23,11 @@
         I'm a web developer
       </h2>
     </div>
-    <div class="relative md:hidden lg:hidden">
-      <input type="checkbox" class="border-2 border-white" class="toggle" />
+    <div class="block md:hidden lg:hidden relative">
+      <button class="text-white" (click)="toggle()">
+        <img src="/icons/burgerIcon.svg" height="20px" width="20px" />
+      </button>
     </div>
   </div>
+  }
 </section>
