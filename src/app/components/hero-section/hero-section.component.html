@@ -39,29 +39,38 @@
       class="hidden absolute right-20 top-32 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
     ></div>
   </div>
-  <div class="container mx-auto">
-    <div class="flex justify-evenly">
-      <div class="flex flex-col items-start justify-center">
-        <h1 tabindex="0" class="text-white text-sm font-poppins lg:text-2xl">
+  <div class="h-screen block bg-darkBackground">
+    <div class="flex p-4 justify-evenly">
+      <div class="flex flex-col md:justify-center lg:justify-center">
+        <h1 tabindex="0" class="text-white text-lg font-poppins lg:text-2xl">
           Hello, I'm Thibault Beaumont
         </h1>
         <h2
           tabindex="0"
-          class="font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
+          class="text-2xl font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
         >
           I'm a web developer
         </h2>
-        <p class="mt-4 text-lighttext text-wrap max-w-[35rem]">
+        <p
+          class="mt-4 text-sm text-lighttext text-wrap lg:max-w-[35rem] md:max-w-[35rem]"
+        >
           I like to create beautiful website, with a good user experience. I
           work on projects with recent technologies.
         </p>
-        <div class="mt-6">
-          <button class="text-white w-40 p-2 border-2 border-white rounded-md">
+        <img
+          src="/assets/rocket.avif"
+          alt="rocket"
+          class="max-h-36 max-w-36 lg:hidden md:hidden"
+        />
+        <div class="mt-6 flex gap-2">
+          <button
+            class="text-white w-30 text-sm p-2 border-2 border-white rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary"
+          >
             Download my CV
           </button>
 
           <button
-            class="text-white w-40 p-2 ml-2 border-2 border-white rounded-md"
+            class="text-white w-30 text-sm p-2 ml-2 border-2 border-white rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary"
           >
             Hire me
           </button>
@@ -70,10 +79,10 @@
       <img
         src="/assets/rocket.avif"
         alt="rocket"
-        class="hidden max-w-96 max-h-96 md:block lg:block"
+        class="hidden md:max-w-96 lg:max-h-96"
       />
-      <div class="block md:hidden lg:hidden relative">
-        <button class="text-white" (click)="toggle()">
+      <div class="fixed inset-0 md:hidden lg:hidden">
+        <button class="text-white absolute right-5 top-5" (click)="toggle()">
           <img src="/icons/burgerIcon.svg" height="20px" width="20px" />
         </button>
       </div>
