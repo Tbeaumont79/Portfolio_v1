@@ -9,8 +9,9 @@ module.exports = {
         primary: "#E91E63",
         accent: "#00BCD4",
         lighttext: "#B0BEC5",
-        darkBackground: "#121212",
+        darkBackground: "#00171f",
         purpleBackground: "#6A1B9A",
+        softPink: "#ffcfef"
       },
       background: {},
       fontSize: {
@@ -25,6 +26,10 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
+      },
+      blur: {
+        "4xl": "100px",
+        "5xl": "150px",
       },
     },
   },
