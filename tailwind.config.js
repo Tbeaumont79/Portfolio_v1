@@ -9,7 +9,8 @@ module.exports = {
         primary: "#E91E63",
         accent: "#00BCD4",
         lighttext: "#B0BEC5",
-        darkBackground: "#00171f",
+        darkBackground: "#000000",
+        lightDarkBackground: "#00171f",
         purpleBackground: "#6A1B9A",
         softPink: "#ffcfef"
       },
