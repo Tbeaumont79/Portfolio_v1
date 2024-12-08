@@ -12,7 +12,7 @@ module.exports = {
         darkBackground: "#000000",
         lightDarkBackground: "#00171f",
         purpleBackground: "#6A1B9A",
-        softPink: "#ffcfef"
+        softPink: "#ffcfef",
       },
       background: {},
       fontSize: {
@@ -28,6 +28,7 @@ module.exports = {
         roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
+
       blur: {
         "4xl": "100px",
         "5xl": "150px",
