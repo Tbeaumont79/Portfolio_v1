@@ -39,30 +39,40 @@
       class="hidden absolute right-20 top-32 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
     ></div>
   </div>
-  <div class="h-screen block bg-darkBackground">
+  <div
+    class="h-screen flex flex-col items-center justify-center bg-darkBackground"
+  >
     <div class="flex p-4 justify-evenly">
-      <div class="flex flex-col md:justify-center lg:justify-center">
-        <h1 tabindex="0" class="text-white text-lg font-poppins lg:text-2xl">
-          Hello, I'm Thibault Beaumont
-        </h1>
-        <h2
-          tabindex="0"
-          class="text-2xl font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
+      <div class="h-screen flex flex-col justify-evenly">
+        <div
+          class="flex flex-col justify-center items-start md:justify-center lg:justify-center"
         >
-          I'm a web developer
-        </h2>
-        <p
-          class="mt-4 text-sm text-lighttext text-wrap lg:max-w-[35rem] md:max-w-[35rem]"
+          <h1 tabindex="0" class="text-white text-lg font-poppins lg:text-2xl">
+            Hello, I'm Thibault Beaumont
+          </h1>
+          <h2
+            tabindex="0"
+            class="text-2xl font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
+          >
+            I'm a web developer
+          </h2>
+          <p
+            class="mt-4 text-sm text-lighttext text-wrap lg:max-w-[35rem] md:max-w-[35rem]"
+          >
+            I like to create beautiful website, with a good user experience. I
+            work on projects with recent technologies.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center md:justify-center lg:justify-center"
         >
-          I like to create beautiful website, with a good user experience. I
-          work on projects with recent technologies.
-        </p>
-        <img
-          src="/assets/rocket.avif"
-          alt="rocket"
-          class="max-h-36 max-w-36 lg:hidden md:hidden"
-        />
-        <div class="mt-6 flex gap-2">
+          <img
+            src="/assets/rocket.avif"
+            alt="rocket"
+            class="max-h-[15rem] max-w-[15rem] lg:hidden md:hidden"
+          />
+        </div>
+        <div class="mt-6 flex justify-center gap-2">
           <button
             class="text-white w-30 text-sm p-2 border-2 border-white rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary"
           >
@@ -76,10 +86,11 @@
           </button>
         </div>
       </div>
+
       <img
         src="/assets/rocket.avif"
         alt="rocket"
-        class="hidden md:max-w-96 lg:max-h-96"
+        class="hidden md:block lg:block md:max-w-96 lg:max-h-96"
       />
       <div class="fixed inset-0 md:hidden lg:hidden">
         <button class="text-white absolute right-5 top-5" (click)="toggle()">
