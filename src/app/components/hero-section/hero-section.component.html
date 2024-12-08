@@ -13,25 +13,25 @@
   </div>
   } @else {
   <div class="hidden md:block lg:block fixed h-screen inset-5">
-    <nav class="absolute right-10 top-0 flex gap-5">
+    <nav class="absolute right-10 top-0 flex gap-6">
       <a
         href="#"
-        class="p-2 text-lighttext hover:text-primary hover:bg-white rounded-lg"
+        class="p-2 text-lighttext hover:text-primary hover:bg-white hover:font-bold rounded-lg"
         >Home</a
       >
       <a
         href="#"
-        class="p-2 text-lighttext hover:text-primary hover:bg-white rounded-lg"
+        class="p-2 text-lighttext hover:text-primary hover:bg-white hover:font-bold rounded-lg"
         >About</a
       >
       <a
         href="#"
-        class="p-2 text-lighttext hover:text-primary hover:bg-white rounded-lg"
+        class="p-2 text-lighttext hover:text-primary hover:bg-white hover:font-bold rounded-lg"
         >Projects</a
       >
       <a
         href="#"
-        class="p-2 text-lighttext hover:text-primary hover:bg-white rounded-lg"
+        class="p-2 text-lighttext hover:text-primary hover:bg-white hover:font-bold rounded-lg"
         >Contact</a
       >
     </nav>
@@ -44,7 +44,7 @@
   >
     <div class="flex p-4 justify-evenly md:gap-10 lg:gap-20">
       <div
-        class="h-screen flex flex-col justify-evenly md:justify-center lg:justify-center"
+        class="h-screen flex flex-col gap-10 justify-evenly md:justify-center lg:justify-center"
       >
         <div
           class="flex flex-col justify-center items-start md:justify-center lg:justify-center"
@@ -65,6 +65,12 @@
             work on projects with recent technologies.
           </p>
         </div>
+        <div class="relative">
+          <img
+            class="hidden max-w-72 max-h-72 absolute -bottom-40 left-16 md:block lg:block"
+            src="/icons/heroArrowIcon.svg"
+          />
+        </div>
         <div class="flex flex-col justify-center items-center">
           <img
             src="/assets/rocket.avif"
@@ -72,18 +78,21 @@
             class="max-h-[15rem] max-w-[15rem] lg:hidden md:hidden"
           />
         </div>
+
         <div
-          class="mt-6 flex justify-center gap-2 md:justify-start lg:justify-start"
+          class="flex justify-center gap-2 md:justify-start lg:justify-start"
         >
           <button
-            class="z-10 text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary"
+            class="z-10 text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
             onclick=""
           >
             Download my CV
           </button>
-
+          <div
+            class="hidden absolute left-10 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
+          ></div>
           <button
-            class="z-10 text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary"
+            class="z-10 text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
             onclick=""
           >
             Hire Me
