@@ -42,8 +42,10 @@
   <div
     class="h-screen flex flex-col items-center justify-center bg-darkBackground"
   >
-    <div class="flex p-4 justify-evenly">
-      <div class="h-screen flex flex-col justify-evenly">
+    <div class="flex p-4 justify-evenly md:gap-10 lg:gap-20">
+      <div
+        class="h-screen flex flex-col justify-evenly md:justify-center lg:justify-center"
+      >
         <div
           class="flex flex-col justify-center items-start md:justify-center lg:justify-center"
         >
@@ -57,22 +59,22 @@
             I'm a web developer
           </h2>
           <p
-            class="mt-4 text-sm text-lighttext text-wrap lg:max-w-[35rem] md:max-w-[35rem]"
+            class="mt-4 text-sm text-lighttext text-wrap lg:max-w-[35rem] md:max-w-[24rem]"
           >
             I like to create beautiful website, with a good user experience. I
             work on projects with recent technologies.
           </p>
         </div>
-        <div
-          class="flex flex-col justify-center items-center md:justify-center lg:justify-center"
-        >
+        <div class="flex flex-col justify-center items-center">
           <img
             src="/assets/rocket.avif"
             alt="rocket"
             class="max-h-[15rem] max-w-[15rem] lg:hidden md:hidden"
           />
         </div>
-        <div class="mt-6 flex justify-center gap-2">
+        <div
+          class="mt-6 flex justify-center gap-2 md:justify-start lg:justify-start"
+        >
           <button
             class="text-white w-30 text-sm p-2 border-2 border-white rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary"
           >
@@ -87,11 +89,15 @@
         </div>
       </div>
 
-      <img
-        src="/assets/rocket.avif"
-        alt="rocket"
-        class="hidden md:block lg:block md:max-w-96 lg:max-h-96"
-      />
+      <div
+        class="hidden h-screen md:flex lg:flex flex-col justify-center items-center"
+      >
+        <img
+          src="/assets/rocket.avif"
+          alt="rocket"
+          class="hidden md:block lg:block md:max-h-60 md:max-w-60 lg:max-w-96 lg:max-h-96"
+        />
+      </div>
       <div class="fixed inset-0 md:hidden lg:hidden">
         <button class="text-white absolute right-5 top-5" (click)="toggle()">
           <img src="/icons/burgerIcon.svg" height="20px" width="20px" />
