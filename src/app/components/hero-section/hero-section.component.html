@@ -35,28 +35,35 @@
         >Contact</a
       >
     </nav>
+    <div
+      class="hidden absolute right-20 top-32 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
+    ></div>
   </div>
   <div class="container mx-auto">
     <div class="flex justify-evenly">
       <div class="flex flex-col items-start justify-center">
-        <h1 class="text-white text-sm font-poppins lg:text-2xl">
+        <h1 tabindex="0" class="text-white text-sm font-poppins lg:text-2xl">
           Hello, I'm Thibault Beaumont
         </h1>
         <h2
-          class="text-base font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
+          tabindex="0"
+          class="font-roboto bg-gradient-to-r from-primary to-accent inline-block bg-clip-text text-transparent lg:text-4xl"
         >
           I'm a web developer
         </h2>
-        <div class="mt-4">
-          <button
-            class="text-white p-2 border-2 border-purpleBackground rounded-md"
-          >
-            Check my Project
-          </button>
-          <button
-            class="text-white p-2 ml-2 border-2 border-purpleBackground rounded-md"
-          >
+        <p class="mt-4 text-lighttext text-wrap max-w-[35rem]">
+          I like to create beautiful website, with a good user experience. I
+          work on projects with recent technologies.
+        </p>
+        <div class="mt-6">
+          <button class="text-white w-40 p-2 border-2 border-white rounded-md">
             Download my CV
+          </button>
+
+          <button
+            class="text-white w-40 p-2 ml-2 border-2 border-white rounded-md"
+          >
+            Hire me
           </button>
         </div>
       </div>
