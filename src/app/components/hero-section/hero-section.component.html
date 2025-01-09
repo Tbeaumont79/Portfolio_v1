@@ -12,29 +12,33 @@
     </nav>
   </div>
   } @else {
-  <div class="hidden md:block lg:block fixed h-screen inset-5">
-    <nav class="absolute right-10 top-0 flex gap-6">
-      <a
-        href="#"
-        class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
-        >Home</a
+  <div class="hidden md:block lg:block sticky inset-0 z-10">
+    <div class="w-full h-20 backdrop-filter backdrop-blur-md z-50">
+      <nav
+        class="top-0 flex gap-6 w-full h-20 shadow-2xl shadow-darkBackground justify-end items-center pr-10"
       >
-      <a
-        href="#"
-        class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
-        >About</a
-      >
-      <a
-        href="#"
-        class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
-        >Projects</a
-      >
-      <a
-        href="#"
-        class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
-        >Contact</a
-      >
-    </nav>
+        <a
+          href="#"
+          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          >About</a
+        >
+        <a
+          href="#"
+          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          >Projects</a
+        >
+        <a
+          href="#"
+          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          >Contact</a
+        >
+      </nav>
+    </div>
   </div>
   <div
     class="hidden absolute right-20 top-32 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
@@ -83,7 +87,7 @@
           class="flex justify-center gap-2 md:justify-start lg:justify-start"
         >
           <button
-            class="z-10 text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
+            class="z-[1] text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
             onclick=""
           >
             Download my CV
@@ -92,7 +96,7 @@
             class="hidden absolute left-10 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
           ></div>
           <button
-            class="z-10 text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
+            class="z-[1] text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
             onclick=""
           >
             Hire Me
