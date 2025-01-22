@@ -9,6 +9,17 @@ import { Component } from '@angular/core';
 })
 export class HeroSectionComponent {
   isOpen = false;
+  socialLinks = [
+    {
+      img: '/icons/linkedin.svg',
+      link: 'https://www.linkedin.com/in/beaumont-thibault/',
+    },
+    { img: '/icons/github.svg', link: 'https://github.com/Tbeaumont79' },
+    {
+      img: '/icons/bluesky.svg',
+      link: 'https://bsky.app/profile/thibaultb79.bsky.social',
+    },
+  ];
   toggle() {
     this.isOpen = !this.isOpen;
   }

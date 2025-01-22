@@ -13,10 +13,10 @@
   </div>
   } @else {
   <div class="hidden md:block lg:block sticky inset-0 z-10">
-    <div class="w-full h-20 backdrop-filter backdrop-blur-[5px] bg-opacity-50 z-50">
-      <nav
-        class="top-0 flex gap-6 w-full h-20 justify-end items-center pr-10"
-      >
+    <div
+      class="w-full h-20 backdrop-filter backdrop-blur-[5px] bg-opacity-50 z-50"
+    >
+      <nav class="top-0 flex gap-6 w-full h-20 justify-end items-center pr-10">
         <a
           href="#"
           class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
@@ -82,25 +82,33 @@
             class="max-h-[15rem] max-w-[15rem] lg:hidden md:hidden"
           />
         </div>
-
-        <div
-          class="flex justify-center gap-2 md:justify-start lg:justify-start"
-        >
-          <button
-            class="z-[1] text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
-            onclick=""
-          >
-            Download my CV
-          </button>
+        <div class="flex flex-col">
           <div
-            class="hidden absolute left-10 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
-          ></div>
-          <button
-            class="z-[1] text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
-            onclick=""
+            class="flex justify-center gap-2 md:justify-start lg:justify-start"
           >
-            Hire Me
-          </button>
+            <button
+              class="z-[1] text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
+              onclick=""
+            >
+              Download my CV
+            </button>
+            <div
+              class="hidden absolute left-10 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
+            ></div>
+            <button
+              class="z-[1] text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
+              onclick=""
+            >
+              Hire Me
+            </button>
+          </div>
+          <div class="flex gap-4 pt-5 justify-evenly max-w-48">
+            @for (item of socialLinks; track item ) {
+            <a href="{{ item.link }}"
+              ><img class="h-8 w-8" src="{{ item.img }}"
+            /></a>
+            }
+          </div>
         </div>
       </div>
 
