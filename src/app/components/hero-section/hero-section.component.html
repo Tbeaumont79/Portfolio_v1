@@ -102,10 +102,10 @@
               Hire Me
             </button>
           </div>
-          <div class="flex gap-4 pt-5 justify-evenly max-w-48">
+          <div class="flex gap-4 mt-8 justify-evenly max-w-48">
             @for (item of socialLinks; track item ) {
-            <a href="{{ item.link }}"
-              ><img class="h-8 w-8" src="{{ item.img }}"
+            <a class="rounded-full bg-slate-600 p-3" href="{{ item.link }}"
+              ><img class="h-5 w-5" src="{{ item.img }}"
             /></a>
             }
           </div>
@@ -116,7 +116,7 @@
         class="hidden h-screen md:flex lg:flex flex-col justify-center items-center"
       >
         <img
-          src="/assets/rocket.avif"
+          src="/assets/rocket_.avif"
           alt="rocket"
           class="hidden md:block lg:block md:max-h-60 md:max-w-60 lg:max-w-96 lg:max-h-96"
         />
