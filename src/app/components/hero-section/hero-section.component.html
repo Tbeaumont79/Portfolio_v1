@@ -102,10 +102,12 @@
               Hire Me
             </button>
           </div>
-          <div class="flex gap-4 mt-8 justify-evenly max-w-48">
+          <div
+            class="flex gap-4 mt-10 justify-center md:justify-start lg:justify-start max-w-48"
+          >
             @for (item of socialLinks; track item ) {
             <a class="rounded-full bg-slate-600 p-3" href="{{ item.link }}"
-              ><img class="h-5 w-5" src="{{ item.img }}"
+              ><img width="20px" height="20px" alt="{{ item.alt }}" src="{{ item.img }}"
             /></a>
             }
           </div>
