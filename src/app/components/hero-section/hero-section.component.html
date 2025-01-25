@@ -1,6 +1,6 @@
-<section class="flex flex-col justify-center h-screen">
+<section class="flex flex-col justify-center h-full">
   @if (isOpen) {
-  <div class="fixed h-screen inset-0 bg-darkBackground">
+  <div class="fixed h-full inset-0 bg-darkBackground">
     <button class="text-white absolute right-5 top-5" (click)="toggle()">
       <img src="/icons/closeIcon.svg" height="20px" width="20px" />
     </button>
@@ -107,7 +107,11 @@
           >
             @for (item of socialLinks; track item ) {
             <a class="rounded-full bg-slate-600 p-3" href="{{ item.link }}"
-              ><img width="20px" height="20px" alt="{{ item.alt }}" src="{{ item.img }}"
+              ><img
+                width="20px"
+                height="20px"
+                alt="{{ item.alt }}"
+                src="{{ item.img }}"
             /></a>
             }
           </div>
