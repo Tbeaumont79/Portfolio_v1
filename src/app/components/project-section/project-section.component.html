@@ -53,13 +53,17 @@
               : item.description
           }}
         </p>
-        <p
-          class="text-sm pl-2 pr-2 max-w-max text-lighttext border-[1px] border-darkGray bg-darkGray rounded-lg"
-        >
-          {{
-            item.language === null ? "No language" : item.language.toLowerCase()
-          }}
-        </p>
+        @if (item.topics.length > 0) {
+        <div class="flex flex-wrap gap-2">
+          @for (topic of item.topics; track topic) {
+          <p
+            class="text-sm pl-2 pr-2 max-w-max text-lighttext border-[1px] border-darkGray bg-darkGray rounded-lg"
+          >
+            {{ topic }}
+          </p>
+          }
+        </div>
+        }
       </div>
     </a>
     }
