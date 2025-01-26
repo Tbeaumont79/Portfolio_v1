@@ -3,6 +3,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HeroSectionComponent,
     AboutSectionComponent,
     ProjectSectionComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
