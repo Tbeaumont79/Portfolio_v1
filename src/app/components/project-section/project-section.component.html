@@ -7,27 +7,27 @@
   <div class="flex flex-col items-center gap-y-10">
     @for(item of filteredRepo; track item) {
     <a
-      class="p-4 border-2 border-lighttext border-opacity-40 rounded-md hover:border-softPink"
+      class="p-4 border-[1px] w-3/4 border-lighttext border-opacity-40 rounded-md z-[1] hover:border-softPink md:w-1/2 lg:1/2"
       href="{{ item.html_url }}"
       target="_blank"
     >
       <div class="flex flex-col gap-4">
-        <div class="flex justify-between">
+        <div class="flex flex-col gap-y-2 md:gap-y-0 md:flex-row lg:flex-row justify-between">
           <h3 class="text-white text-lg font-poppins md:text-xl lg:text-2xl">
             {{ item.name }}
           </h3>
           <div class="flex gap-2 items-center">
-          <div class="flex gap-1">
-            <img
-            width="20px"
-            height="20px"
-            src="/icons/star.svg"
-            alt="a star icon"
-          />
-          <p class="text-lighttext text-sm">
-            {{ item["stargazers_count"] }}
-          </p>
-          </div>
+            <div class="flex gap-1">
+              <img
+                width="20px"
+                height="20px"
+                src="/icons/star.svg"
+                alt="a star icon"
+              />
+              <p class="text-lighttext text-sm">
+                {{ item["stargazers_count"] }}
+              </p>
+            </div>
             <div class="flex gap-1">
               <img
                 width="20px"
@@ -35,7 +35,7 @@
                 src="/icons/clock.svg"
                 alt="a clock icon"
               />
-              <p class="text-lighttext text-sm">
+              <p class="text-lighttext text-[12px] md:text-sm lg:text-sm">
                 {{ item["created_at"] | date : "mediumDate" }}
               </p>
             </div>
@@ -43,12 +43,19 @@
         </div>
 
         <p
-          class="text-sm text-lighttext text-wrap md:max-w-[24rem] md:text-base lg:max-w-[35rem] lg:text-base"
+          class="text-sm text-lighttext text-wrap font-poppins md:text-base lg:text-base"
         >
           {{
             item.description === null
               ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
               : item.description
+          }}
+        </p>
+        <p
+          class="text-sm pl-2 pr-2 max-w-max text-lighttext border-[1px] border-darkGray bg-darkGray rounded-lg"
+        >
+          {{
+            item.language === null ? "No language" : item.language.toLowerCase()
           }}
         </p>
       </div>

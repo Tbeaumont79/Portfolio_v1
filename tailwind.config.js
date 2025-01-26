@@ -12,6 +12,7 @@ module.exports = {
         darkBackground: "#00171f",
         purpleBackground: "#6A1B9A",
         softPink: "#ffcfef",
+        darkGray: "#282828",
       },
       background: {},
       fontSize: {

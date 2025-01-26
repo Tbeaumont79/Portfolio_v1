@@ -1,4 +1,6 @@
-<section class="h-full inset-0 fixed">
+<section
+  class="inset-0 h-20 z-30 fixed backdrop-filter backdrop-blur-[5px] bg-opacity-50"
+>
   @if (isOpen) {
   <div class="fixed h-full inset-0 bg-darkBackground">
     <button class="text-white absolute right-5 top-5" (click)="toggle()">
@@ -12,10 +14,8 @@
     </nav>
   </div>
   } @else {
-  <div class="h-full hidden md:block lg:block sticky inset-0 z-10">
-    <div
-      class="w-full h-20 backdrop-filter backdrop-blur-[5px] bg-opacity-50 z-50"
-    >
+  <div class="hidden md:block lg:block">
+    <div class="w-full h-20">
       <nav class="top-0 flex gap-6 w-full h-20 justify-end items-center pr-10">
         <a
           href="#"

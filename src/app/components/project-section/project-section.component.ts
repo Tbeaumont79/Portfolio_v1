@@ -13,10 +13,10 @@ export class ProjectSectionComponent {
   filteredRepo: any = [];
   wantedRepo: string[] = [
     'Portfolio_v1',
-    'pix',
     'social-data-api',
     'docker-php-server',
     'Pomodoro',
+    'pix',
   ];
   constructor(private githubService: GithubService) {}
   ngOnInit(): void {

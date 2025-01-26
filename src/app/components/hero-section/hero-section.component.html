@@ -1,13 +1,11 @@
-<section class="flex flex-col justify-center h-full">
+<section class="flex flex-col justify-center">
   <div
     class="hidden absolute right-20 top-32 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
   ></div>
-  <div
-    class="h-screen flex flex-col items-center justify-center bg-darkBackground"
-  >
+  <div class="flex flex-col items-center justify-center bg-darkBackground">
     <div class="flex p-4 justify-evenly md:gap-10 lg:gap-20">
       <div
-        class="h-screen flex flex-col gap-10 justify-evenly md:justify-center lg:justify-center"
+        class="flex flex-col gap-10 justify-evenly md:justify-center lg:justify-center"
       >
         <div
           class="flex flex-col justify-center items-start md:justify-center lg:justify-center"
@@ -46,7 +44,7 @@
             class="flex justify-center gap-2 md:justify-start lg:justify-start"
           >
             <button
-              class="z-[1] text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
+              class="z-10 text-white w-30 text-sm p-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
               onclick=""
             >
               Download my CV
@@ -55,7 +53,7 @@
               class="hidden absolute left-10 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
             ></div>
             <button
-              class="z-[1] text-white w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
+              class="text-white z-10 w-30 text-sm p-2 ml-2 border-2 border-white shadow-md shadow-neutral-400 rounded-md md:w-40 lg:w-40 hover:bg-white hover:text-primary hover:font-bold"
               onclick=""
             >
               Hire Me
@@ -65,7 +63,7 @@
             class="flex gap-4 mt-10 justify-center md:justify-start lg:justify-start max-w-48"
           >
             @for (item of socialLinks; track item ) {
-            <a class="rounded-full bg-slate-600 p-3" href="{{ item.link }}"
+            <a class="rounded-full bg-darkGray p-4" href="{{ item.link }}"
               ><img
                 width="20px"
                 height="20px"
@@ -77,9 +75,7 @@
         </div>
       </div>
 
-      <div
-        class="hidden h-screen md:flex lg:flex flex-col justify-center items-center"
-      >
+      <div class="hidden md:flex lg:flex flex-col justify-center items-center">
         <img
           src="/assets/rocket.svg"
           alt="rocket"
