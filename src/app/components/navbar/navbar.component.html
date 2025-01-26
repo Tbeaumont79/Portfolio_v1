@@ -1,10 +1,8 @@
-<section
-  class="inset-0 h-20 z-30 fixed backdrop-filter backdrop-blur-[5px] bg-opacity-50"
->
+<section class="inset-0">
   @if (isOpen) {
-  <div class="fixed h-full inset-0 bg-darkBackground">
-    <button class="text-white absolute right-5 top-5" (click)="toggle()">
-      <img src="/icons/closeIcon.svg" height="20px" width="20px" />
+  <div class="fixed h-screen inset-0 bg-darkBackground z-50">
+    <button class="text-white absolute right-2 top-5" (click)="toggle()">
+      <img src="/icons/close.svg" height="20px" width="20px" />
     </button>
     <nav class="flex h-screen flex-col items-center justify-center">
       <a href="#" class="mb-4 text-lg text-lighttext">Home</a>
@@ -14,7 +12,9 @@
     </nav>
   </div>
   } @else {
-  <div class="hidden md:block lg:block">
+  <div
+    class="hidden w-full h-20 z-30 fixed backdrop-filter backdrop-blur-[5px] bg-opacity-50 md:block lg:block"
+  >
     <div class="w-full h-20">
       <nav class="top-0 flex gap-6 w-full h-20 justify-end items-center pr-10">
         <a
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div class="fixed inset-0 md:hidden lg:hidden">
-    <button class="text-white absolute right-5 top-5" (click)="toggle()">
+    <button class="text-white absolute right-2 top-5" (click)="toggle()">
       <img src="/icons/burgerIcon.svg" height="20px" width="20px" />
     </button>
   </div>
