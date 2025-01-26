@@ -60,13 +60,13 @@
             </button>
           </div>
           <div
-            class="flex gap-4 mt-10 justify-center md:justify-start lg:justify-start max-w-48"
+            class="flex gap-4 mt-10 justify-center items-center md:justify-start lg:justify-start max-w-48"
           >
             @for (item of socialLinks; track item ) {
-            <a class="rounded-full bg-darkGray p-4" href="{{ item.link }}"
+            <a class="rounded-full bg-darkGray p-3" href="{{ item.link }}"
               ><img
-                width="20px"
-                height="20px"
+                width="18px"
+                height="18px"
                 alt="{{ item.alt }}"
                 src="{{ item.img }}"
             /></a>
