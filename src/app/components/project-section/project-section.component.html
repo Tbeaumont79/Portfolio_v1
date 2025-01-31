@@ -1,20 +1,19 @@
-<section id="projects" class="flex flex-col gap-y-10 w-full">
+<section id="projects" class="flex flex-col items-center gap-y-10">
   <h2
+    tabindex="0"
     class="text-white text-lg font-poppins md:text-xl lg:text-2xl text-center"
   >
     Projects
   </h2>
-  <div class="flex flex-col items-center gap-y-10">
+  <div class="w-3/4 flex flex-wrap gap-6 justify-center gap-y-10">
     @for(item of filteredRepo; track item) {
     <a
-      class="p-4 border-[1px] w-3/4 border-lighttext border-opacity-40 rounded-md z-[1] hover:border-softPink md:w-3/4 lg:1/2"
+      class="p-4 border-[1px] relative w-[450px] h-72 border-lighttext border-opacity-40 rounded-md z-[1] hover:border-softPink"
       href="{{ item.html_url }}"
       target="_blank"
     >
       <div class="flex flex-col gap-4">
-        <div
-          class="flex flex-col gap-y-2 md:flex-row lg:flex-row justify-between"
-        >
+        <div class="flex flex-col gap-y-2">
           <h3 class="text-white text-lg font-poppins md:text-xl lg:text-2xl">
             {{ item.name }}
           </h3>
@@ -45,7 +44,7 @@
         </div>
 
         <p
-          class="text-sm text-lighttext text-wrap font-poppins md:text-base lg:text-base"
+          class="text-sm mt-4 text-lighttext text-wrap line-clamp-5 font-poppins md:text-base lg:text-base"
         >
           {{
             item.description === null
@@ -54,7 +53,7 @@
           }}
         </p>
         @if (item.topics.length > 0) {
-        <div class="flex flex-wrap gap-2">
+        <div class="absolute bottom-4 flex flex-wrap gap-2">
           @for (topic of item.topics; track topic) {
           <p
             class="text-sm pl-2 pr-2 max-w-max text-lighttext border-[1px] border-darkGray bg-darkGray rounded-lg"
