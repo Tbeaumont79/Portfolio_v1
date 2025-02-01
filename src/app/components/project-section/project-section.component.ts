@@ -17,7 +17,7 @@ export class ProjectSectionComponent {
     'social-data-api',
     'docker-php-server',
     'Pomodoro',
-    'pix',
+    'blog',
   ];
   // appeler l'observable dans le html et faire un pipe async il se demerde pour les fuites de memory
   constructor(private githubService: GithubService) {}
