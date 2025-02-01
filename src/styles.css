@@ -7,29 +7,29 @@
   scroll-behavior: smooth;
 }
 @font-face {
-  font-family: 'Roboto';
-  src: url('/public/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400; /* Regular */
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('/public/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700; /* Bold */
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('/public/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../public/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('/public/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("../public/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
