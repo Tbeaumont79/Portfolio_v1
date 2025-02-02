@@ -5,7 +5,7 @@
   >
     Projects
   </h2>
-  <div class="w-3/4 flex flex-wrap gap-6 justify-center gap-y-10">
+  <div class="w-3/4 flex flex-wrap gap-6 justify-center gap-y-10 lg:w-1/2 lg:gap-8">
     @for(item of filteredRepo; track item) {
     <a
       class="p-4 border-[1px] relative w-[450px] h-72 border-lighttext border-opacity-40 rounded-md z-[1] hover:border-softPink"
@@ -44,7 +44,7 @@
         </div>
 
         <p
-          class="text-sm mt-4 text-lighttext text-wrap line-clamp-4 leading-6 font-poppins md:text-base lg:text-base"
+          class="text-sm mt-4 text-lighttext text-wrap line-clamp-4 leading-6 font-roboto md:text-base lg:text-base"
         >
           {{
             item.description === null
