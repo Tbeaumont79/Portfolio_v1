@@ -6,7 +6,6 @@ import { DatePipe } from '@angular/common';
   standalone: true,
   imports: [DatePipe],
   templateUrl: './project-section.component.html',
-  styleUrl: './project-section.component.css',
 })
 export class ProjectSectionComponent {
   myObservable: any;

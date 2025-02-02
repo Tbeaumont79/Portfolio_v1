@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './hero-section.component.html',
-  styleUrl: './hero-section.component.css',
 })
 export class HeroSectionComponent {
   isOpen = false;
