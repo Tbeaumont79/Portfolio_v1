@@ -5,10 +5,15 @@
       <img src="/icons/close.svg" height="20px" width="20px" />
     </button>
     <nav class="flex h-screen flex-col items-center justify-center">
-      <a href="#home" class="mb-4 text-lg text-lighttext">Home</a>
-      <a href="#projects" class="mb-4 text-lg text-lighttext">Projects</a>
-      <a href="#about" class="mb-4 text-lg text-lighttext">About</a>
-      <a href="mailto:tbeaumont79@icloud.com" class="text-lg text-lighttext"
+      <a href="#home" class="mb-4 font-roboto text-lg text-lighttext">Home</a>
+      <a href="#projects" class="mb-4 font-roboto text-lg text-lighttext"
+        >Projects</a
+      >
+      <a href="#about" class="mb-4 font-roboto text-lg text-lighttext">About</a>
+      <a
+        href="mailto:tbeaumont79@icloud.com"
+        class="text-lg font-roboto text-lighttext"
+        font-roboto
         >Contact</a
       >
     </nav>
@@ -21,23 +26,23 @@
       <nav class="top-0 flex gap-6 w-full h-20 justify-end items-center pr-10">
         <a
           href="#home"
-          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          class="p-2 text-lighttext font-roboto w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
           >Home</a
         >
 
         <a
           href="#projects"
-          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          class="p-2 text-lighttext font-roboto w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
           >Projects</a
         >
         <a
           href="#about"
-          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          class="p-2 text-lighttext font-roboto w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
           >About</a
         >
         <a
           href="mailto:tbeaumont79@icloud.com"
-          class="p-2 text-lighttext w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          class="p-2 text-lighttext font-roboto w-20 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
           >Contact</a
         >
       </nav>
@@ -46,7 +51,12 @@
   <div class="fixed inset-0 md:hidden lg:hidden">
     <button class="text-white absolute right-2 top-5" (click)="toggle()">
       <span class="sr-only">Open main menu</span>
-      <img src="/icons/burgerIcon.svg" alt="burger icon" height="20px" width="20px" />
+      <img
+        src="/icons/burgerIcon.svg"
+        alt="burger icon"
+        height="20px"
+        width="20px"
+      />
     </button>
   </div>
   }
