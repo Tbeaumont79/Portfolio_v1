@@ -5,10 +5,12 @@
   >
     Projects
   </h2>
-  <div class="w-3/4 flex flex-wrap gap-6 justify-center gap-y-10 lg:w-1/2 lg:gap-8">
+  <div
+    class="w-3/4 pt-4 flex flex-wrap gap-6 justify-center gap-y-10 md:w-full lg:w-[1000px] lg:gap-8"
+  >
     @for(item of filteredRepo; track item) {
     <a
-      class="p-4 border-[1px] relative w-[450px] h-72 border-lighttext border-opacity-40 rounded-md z-[1] hover:border-softPink"
+      class="p-4 border-[1px] relative h-72 border-lighttext border-opacity-40 rounded-md z-[1] hover:border-softPink w-[300px] md:w-[325px] lg:w-[450px]"
       href="{{ item.html_url }}"
       target="_blank"
     >
