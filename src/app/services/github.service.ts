@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment.prod';
 })
 export class GithubService {
   private username = 'tbeaumont79';
-  private apiUrl = `https://api.github.com/users/${this.username}/repos`;
+  private apiUrl = `https://api.github.com/users/${this.username}/repos?per_page=100`;
 
   constructor(private http: HttpClient) {}
 

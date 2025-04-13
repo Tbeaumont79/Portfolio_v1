@@ -13,7 +13,6 @@ export class ProjectSectionComponent {
   filteredRepo: any = [];
   wantedRepo: string[] = [
     'Portfolio_v1',
-    'social-data-api',
     'docker-php-server',
     'Pomodoro',
     'blog',
