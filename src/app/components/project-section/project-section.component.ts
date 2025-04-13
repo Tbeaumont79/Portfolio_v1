@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { GithubService } from '../../services/github.service';
 import { DatePipe } from '@angular/common';
 @Component({
-  selector: 'app-project-section',
-  standalone: true,
-  imports: [DatePipe],
-  templateUrl: './project-section.component.html',
+    selector: 'app-project-section',
+    imports: [DatePipe],
+    templateUrl: './project-section.component.html'
 })
 export class ProjectSectionComponent {
   myObservable: any;

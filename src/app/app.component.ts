@@ -5,17 +5,16 @@ import { ProjectSectionComponent } from './components/project-section/project-se
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    NavbarComponent,
-    HeroSectionComponent,
-    AboutSectionComponent,
-    ProjectSectionComponent,
-    FooterComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+    selector: 'app-root',
+    imports: [
+        NavbarComponent,
+        HeroSectionComponent,
+        AboutSectionComponent,
+        ProjectSectionComponent,
+        FooterComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'portfolio';
