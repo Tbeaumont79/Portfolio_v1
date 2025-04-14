@@ -1,0 +1,7 @@
+<ul>
+  @for (post of posts; track post.slug) {
+  <li>
+    <a [routerLink]="['/blog', post.slug]" class="text-white text-2xl font-bold">{{ post.title }}</a>
+  </li>
+  }
+</ul>

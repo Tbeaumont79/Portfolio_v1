@@ -1,5 +1,9 @@
 @if (!this.markdownSrc) {
-  <p>No markdown source found</p>
+<p class="text-white text-center">No markdown source found</p>
 } @else {
-  <markdown [src]="this.markdownSrc"></markdown>
+<markdown
+  [src]="this.markdownSrc"
+  (load)="onLoad($event)"
+  (error)="onError($event)"
+></markdown>
 }

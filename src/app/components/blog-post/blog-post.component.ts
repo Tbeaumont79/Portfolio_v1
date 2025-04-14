@@ -10,15 +10,23 @@ import { MarkdownModule } from 'ngx-markdown';
 export class BlogPostComponent {
   slug: string;
   markdownSrc: string;
+
   constructor(private route: ActivatedRoute) {
     this.slug = '';
     this.markdownSrc = '';
   }
   ngOnInit() {
-    const slug = this.route.snapshot.paramMap.get('slug');
-    if (slug) {
-      this.slug = slug;
-      this.markdownSrc = `./content/blog/${slug}.md`;
+    this.slug = this.route.snapshot.paramMap.get('slug') || '';
+    if (this.slug) {
+      this.markdownSrc = `/blog/${this.slug}.md`;
     }
+  }
+
+  onLoad(event: any) {
+    console.log('Content loaded successfully', event);
+  }
+
+  onError(event: any) {
+    console.error('Error loading markdown content', event);
   }
 }
