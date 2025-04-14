@@ -22,6 +22,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*.md",
+                "input": "src/content/blog",
+                "output": "/blog"
               }
             ],
             "styles": [
