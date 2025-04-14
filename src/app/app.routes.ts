@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
+export const routes: Routes = [
+  {
+    path: 'blog/:slug',
+    component: BlogPostComponent,
+  },
+];
