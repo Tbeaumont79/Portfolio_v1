@@ -1,9 +1,13 @@
-@if (!this.markdownSrc) {
-<p class="text-white text-center">No markdown source found</p>
-} @else {
-<markdown
-  [src]="this.markdownSrc"
-  (load)="onLoad($event)"
-  (error)="onError($event)"
-></markdown>
-}
+<div class="flex justify-center w-3/4 mx-auto py-8 mt-20">
+  @if (!this.markdownSrc) {
+  <p class="text-white text-center">No markdown source found</p>
+  } @else {
+  <div class="prose prose-md prose-slate dark:prose-invert max-w-none">
+    <markdown
+      [src]="this.markdownSrc"
+      (load)="onLoad($event)"
+      (error)="onError($event)"
+    ></markdown>
+  </div>
+  }
+</div>
