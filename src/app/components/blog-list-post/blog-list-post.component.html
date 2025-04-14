@@ -1,7 +1,45 @@
-<ul>
-  @for (post of posts; track post.slug) {
-  <li>
-    <a [routerLink]="['/blog', post.slug]" class="text-white text-2xl font-bold">{{ post.title }}</a>
-  </li>
-  }
-</ul>
+<section
+  class="flex flex-col justify-center items-center w-4/6 mx-auto gap-y-10 pb-20"
+>
+  <h2
+    class="text-white text-lg font-poppins md:text-xl lg:text-2xl text-center"
+  >
+    Mes articles
+  </h2>
+  <ul class="flex flex-col gap-y-12">
+    @for (post of posts; track post.slug) {
+    <li class="group">
+      <a
+        [routerLink]="['/blog', post.slug]"
+        class="text-white text-2xl font-bold group-hover:text-softPink"
+        >{{ post.title }}</a
+      >
+      <p class="text-gray-400 pt-4 group-hover:text-white">
+        {{ post.description }}
+      </p>
+      <div class="flex justify-between pt-4">
+        <i class="text-white text-md">{{ post.date }}</i>
+        <div class="flex items-center gap-x-2">
+          <p class="text-white text-md group-hover:text-softPink">read more</p>
+          <svg
+            class="rotate-90 w-6 h-6 text-white group-hover:text-softPink"
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+              d="M24 6v36M12 18L24 6l12 12"
+            />
+          </svg>
+        </div>
+      </div>
+    </li>
+    }
+  </ul>
+</section>
