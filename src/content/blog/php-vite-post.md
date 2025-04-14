@@ -1,11 +1,6 @@
----
-title: How to use Vite with PHP
-slug: 08-04-2025-php-vite
-date: Apr 8, 2025
-description: In this posts we are going to take a look at how to use Vite with PHP. Why it can be usefull and how to configure it.
-coverImage: "https://camo.githubusercontent.com/f59a0f92aa5c5a29a35437c7bef1359a50b80363c8d7b70d5751fd91602c6da3/68747470733a2f2f766974652d7068702e6e697469746563682e64652f6173736574732f766974652d7068702e6c6f676f2e737667"
-readingTime: "5 minutes"
----
+<img src="https://camo.githubusercontent.com/f59a0f92aa5c5a29a35437c7bef1359a50b80363c8d7b70d5751fd91602c6da3/68747470733a2f2f766974652d7068702e6e697469746563682e64652f6173736574732f766974652d7068702e6c6f676f2e737667" alt="php + vite logo" class="mx-auto"/>
+
+<i>Reading time : 5 minutes</i>
 
 # Introduction
 
@@ -42,7 +37,7 @@ export default defineConfig({
 
 Make sure you have those scripts defined in your package.json file:
 
-```json
+```js
 "scripts": {
   "dev": "vite",
   "build": "vite build"

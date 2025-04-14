@@ -1,11 +1,6 @@
----
-title: Building a Real-Time Chat App, my Journey with Mercure and Symfony
-slug: 23-02-2025-myjourney-mercureandsymfony
-date: Feb 23, 2025
-description: I've created a chat app using symfony and mercure, in this blog post i will tell you how to setup mercure with docker and symfony.
-coverImage: "https://plus.unsplash.com/premium_photo-1677252438450-b779a923b0f6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVzc2FnZXxlbnwwfHwwfHx8MA%3D%3D"
-readingTime: "5 minutes"
----
+<img src="https://plus.unsplash.com/premium_photo-1677252438450-b779a923b0f6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVzc2FnZXxlbnwwfHwwfHx8MA%3D%3D" class="mx-auto" alt="Chat bubble" width="700px"/>
+
+<i>Reading time : 10 minutes</i>
 
 # Introduction
 
@@ -28,6 +23,7 @@ Since symfony is a fullstack framework we are going to use twig to render our vi
 ```
 composer require symfony/twig-bundle
 ```
+
 This command will create a template folder in your project, with a basic structure. Since this post is about symfony and mercure we will not cover twig in depth. You can find the documentation [here](https://twig.symfony.com/doc/3.x/intro.html)
 
 Then we need to install the mercure bundle so we can follow the documentation: [Pushing Data to Clients Using the Mercure Protocol](https://symfony.com/doc/current/mercure.html)
@@ -110,7 +106,7 @@ final class MessageController extends AbstractController
     public function __construct(MessageService $messageService) {
         $this->messageService = $messageService;
     }
-    
+
 
     #[Route('/message', name: 'get_message', methods: ['GET'])]
     public function getMessage() : Response {

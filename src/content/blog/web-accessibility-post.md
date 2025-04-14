@@ -1,11 +1,6 @@
----
-title: Enhancing Web Accessibility Best Practices for Developers
-slug: 01-02-2025-web-accessibility
-date: Feb 1, 2025
-description: A guide to improving web accessibility with practical tips, examples, and best practices for developers.
-coverImage: https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-readingTime: "8 minutes"
----
+<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="800px" class="mx-auto"/>
+
+<i>Reading time : 8 minutes</i>
 
 # 🌍 Enhancing Web Accessibility: Best Practices for Developers
 
