@@ -26,7 +26,7 @@ npm install vite && npm install vite-plugin-php
 
 After that we can create our vite.config.ts file based on the documentation of the [vite plugin for php](https://vite-php.nititech.de/)
 
-```ts
+```typescript
 import { defineConfig } from "vite";
 import usePHP from "vite-plugin-php";
 

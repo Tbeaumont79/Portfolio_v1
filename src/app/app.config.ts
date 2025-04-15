@@ -6,10 +6,6 @@ import { SecurityContext } from '@angular/core';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 
-import 'prismjs';
-import 'prismjs/components/prism-typescript.min.js';
-import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
-import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 import { provideMarkdown } from 'ngx-markdown';
 export const appConfig: ApplicationConfig = {
   providers: [

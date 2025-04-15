@@ -7,14 +7,14 @@
     Mes articles
   </h2>
   <ul class="flex flex-col gap-y-12">
-    @for (post of posts; track post.slug) {
+    @for (post of posts; track $index) {
     <li class="group">
       <a
         [routerLink]="['/blog', post.slug]"
-        class="text-white text-2xl font-bold group-hover:text-softPink"
+        class="text-white text-xl font-bold group-hover:text-softPink"
         >{{ post.title }}</a
       >
-      <p class="text-gray-400 pt-4 group-hover:text-white">
+      <p class="text-gray-400 text-md pt-4 group-hover:text-white">
         {{ post.description }}
       </p>
       <div class="flex justify-between pt-4">
