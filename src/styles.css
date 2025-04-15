@@ -6,6 +6,9 @@
 * {
   scroll-behavior: smooth;
 }
+*:focus {
+  outline: 1px solid #ffcfef;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
