@@ -33,3 +33,113 @@
   font-weight: 700;
   font-style: normal;
 }
+/**
+ * MIT License
+ * Copyright (c) 2021 Ayush Saini
+ * Holi Theme for prism.js
+ * @author Ayush Saini <@AyushCodes on Twitter>
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #d6e7ff;
+  background: #0c0314;
+  text-shadow: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  text-align: left;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection,
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  color: inherit;
+  background: #1d3b54;
+  text-shadow: none;
+}
+
+pre[class*="language-"] {
+  border: 1px solid #2a4555;
+  border-radius: 5px;
+  padding: 1.5em 1em;
+  margin: 1em 0;
+  overflow: auto;
+}
+pre[class*="language-"]:focus {
+  outline: 1px solid #ffcfef;
+}
+pre[class*="language-"]:hover {
+  border: 1px solid #ffcfef;
+}
+:not(pre) > code[class*="language-"] {
+  color: #f0f6f6;
+  background: #2a4555;
+  padding: 0.2em 0.3em;
+  border-radius: 0.2em;
+  box-decoration-break: clone;
+}
+
+.token.punctuation {
+  color: #ffd09b !important;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #d6e7ff !important;
+}
+
+.token.string,
+.token.char {
+  color: #a6d6d6 !important;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #f7cfd8 !important;
+  background: transparent;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #8e7dbe !important;
+}
+
+.token.function,
+.token.class-name {
+  color: #a6d6d6 !important;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ffd2a5 !important;
+}
