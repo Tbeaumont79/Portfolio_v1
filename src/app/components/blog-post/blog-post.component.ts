@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 @Component({
   selector: 'app-blog-post',
-  imports: [MarkdownModule],
+  imports: [MarkdownModule, RouterModule],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.css',
 })

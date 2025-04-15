@@ -3,9 +3,29 @@
   <p class="text-white text-center">No markdown source found</p>
   } @else {
   <div class="prose prose-md prose-slate dark:prose-invert max-w-none">
+    <a
+      [routerLink]="['/']"
+      class="text-white text-md flex items-center gap-x-2 group hover:text-softPink"
+    >
+      <svg
+        class="-rotate-[90deg] w-6 h-6 text-white group-hover:text-softPink"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+      >
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="4"
+          d="M24 6v36M12 18L24 6l12 12"
+        />
+      </svg>
+    </a>
     <markdown
       [src]="this.markdownSrc"
-      
       (load)="onLoad($event)"
       (error)="onError($event)"
     ></markdown>
