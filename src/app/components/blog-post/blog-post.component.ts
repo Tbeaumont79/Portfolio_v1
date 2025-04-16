@@ -18,7 +18,7 @@ export class BlogPostComponent {
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('slug') || '';
     if (this.slug) {
-      this.markdownSrc = `/blog/${this.slug}.md`;
+      this.markdownSrc = `/blog/fr/${this.slug}.md`;
     }
   }
 

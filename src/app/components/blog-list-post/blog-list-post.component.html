@@ -7,10 +7,10 @@
     Articles
   </h2>
   <ul class="flex flex-col gap-y-12">
-    @for (post of posts; track $index) {
+    @for (post of postsFr; track $index) {
     <li class="group">
       <a
-        [routerLink]="['/blog', post.slug]"
+        [routerLink]="['/blog/fr', post.slug]"
         class="text-white text-xl font-bold group-hover:text-softPink"
         >{{ post.title }}</a
       >
@@ -20,7 +20,7 @@
       <div class="flex justify-between pt-4">
         <i class="text-white text-md">{{ post.date }}</i>
         <div class="flex items-center gap-x-2">
-          <p class="text-white text-md group-hover:text-softPink">read more</p>
+          <p class="text-white text-md group-hover:text-softPink">Lire plus</p>
           <svg
             class="rotate-90 w-6 h-6 text-white group-hover:text-softPink"
             xmlns="http://www.w3.org/2000/svg"
