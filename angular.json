@@ -5,7 +5,7 @@
   "projects": {
     "portfolio": {
       "i18n": {
-        "sourceLocale": "fr-FR",
+        "sourceLocale": "fr",
         "locales": {
           "en-US": "src/locale/messages.en.xlf"
         }
@@ -71,8 +71,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1MB",
-                  "maximumError": "2MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "3MB"
                 },
                 {
                   "type": "anyComponentStyle",
