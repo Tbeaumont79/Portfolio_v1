@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build:netlify"
   publish = "dist/portfolio/browser"
 
 [build.environment]
@@ -7,8 +7,3 @@
 
 [[plugins]]
   package = "@netlify/angular-runtime"
-
-  [plugins.inputs]
-  # Specify the correct paths for Angular 19 structure
-  serverBundlePath = "dist/portfolio/server/server.mjs"
-  browserBundlePath = "dist/portfolio/browser"
