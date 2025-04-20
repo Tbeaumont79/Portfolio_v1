@@ -2,22 +2,25 @@
   @if (isOpen) {
   <div class="fixed h-screen inset-0 bg-darkBackground z-50">
     <button class="text-white absolute right-2 top-5" (click)="toggle()">
-      <img src="/icons/close.svg" height="20px" width="20px" />
+      <img src="/icons/close.svg" height="20px" width="20px" i18n-alt alt="icon de croix" />
     </button>
     <nav class="flex h-screen flex-col items-center justify-center">
       <a href="#home" class="mb-4 font-roboto text-lg text-lighttext"
+        i18n
         >Accueil</a
       >
       <a href="#projects" class="mb-4 font-roboto text-lg text-lighttext"
+        i18n
         >Projets</a
       >
       <a href="#about" class="mb-4 font-roboto text-lg text-lighttext"
+        i18n
         >A propos</a
       >
       <a
         href="mailto:tbeaumont79@icloud.com"
         class="text-lg font-roboto text-lighttext"
-        font-roboto
+        i18n
         >Me contacter</a
       >
     </nav>
@@ -31,22 +34,26 @@
         <a
           href="#home"
           class="p-2 text-lighttext font-roboto w-28 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          i18n
           >Accueil</a
         >
 
         <a
           href="#projects"
           class="p-2 text-lighttext font-roboto w-28 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          i18n
           >Projets</a
         >
         <a
           href="#about"
           class="p-2 text-lighttext font-roboto w-28 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          i18n
           >A propos</a
         >
         <a
           href="mailto:tbeaumont79@icloud.com"
           class="p-2 text-lighttext font-roboto w-28 text-center hover:text-primary hover:bg-white hover:font-bold rounded-lg"
+          i18n
           >Me contacter</a
         >
       </nav>
@@ -54,12 +61,13 @@
   </div>
   <div class="fixed inset-0 md:hidden lg:hidden">
     <button class="text-white absolute right-2 top-5" (click)="toggle()">
-      <span class="sr-only">Ouvrir le menu principal</span>
+      <span class="sr-only" i18n>Ouvrir le menu principal</span>
       <img
         src="/icons/burgerIcon.svg"
-        alt="menu burger"
+        alt="icon de menu burger"
         height="20px"
         width="20px"
+        i18n-alt
       />
     </button>
   </div>

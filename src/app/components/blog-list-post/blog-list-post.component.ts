@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, LOCALE_ID } from '@angular/core';
 import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-blog-list-post',
@@ -7,6 +7,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './blog-list-post.component.css',
 })
 export class BlogListPostComponent {
+  locale: string;
+  localeService = inject(LOCALE_ID);
+  constructor() {
+    this.locale = this.localeService;
+    console.log(this.locale);
+  }
+
   postsEn = [
     {
       slug: 'changing-carrer-post',

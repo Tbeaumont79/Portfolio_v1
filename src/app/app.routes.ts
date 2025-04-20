@@ -7,6 +7,10 @@ export const routes: Routes = [
     component: BlogPostComponent,
   },
   {
+    path: 'blog/en/:slug',
+    component: BlogPostComponent,
+  },
+  {
     path: '',
     component: HomeComponent,
   },

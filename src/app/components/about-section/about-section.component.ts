@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AboutSectionComponent {
   aboutInfo = [
-    { img: '/icons/mapPoint.svg', text: 'Paris, France', alt:'map icon' },
-    { img: '/icons/phone.svg', text: '06.51.51.16.19', alt:'phone icon' },
-    { img: '/icons/letter.svg', text: 'tbeaumont79@icloud.com', alt:'letter icon' },
+    { img: '/icons/mapPoint.svg', text: 'Paris, France', alt:'icon de localisation' },
+    { img: '/icons/phone.svg', text: '06.51.51.16.19', alt:'icon de telephone' },
+    { img: '/icons/letter.svg', text: 'beaumont.thibault@icloud.com', alt:'icon de mail' },
   ];
 }
