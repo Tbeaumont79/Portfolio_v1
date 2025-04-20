@@ -7,12 +7,12 @@
       "i18n": {
         "sourceLocale": {
           "code": "fr",
-          "baseHref": "/fr/"
+          "subPath": "fr"
         },
         "locales": {
           "en-US": {
             "translation": "src/locale/messages.en.xlf",
-            "baseHref": "/en-US/"
+            "subPath": "en-US"
           }
         }
       },
