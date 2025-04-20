@@ -7,3 +7,15 @@
 
 [[plugins]]
   package = "@netlify/angular-runtime"
+
+# Redirection pour la page d'accueil
+[[redirects]]
+  from = "/"
+  to = "/fr"
+  status = 302
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en-US"
+  status = 302
