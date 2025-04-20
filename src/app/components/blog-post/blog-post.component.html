@@ -1,5 +1,7 @@
 <div class="flex justify-center w-3/4 mx-auto py-8 mt-20">
-  @if (!this.markdownSrc) {
+  @if (loadError) {
+  <p class="text-white text-center" i18n>Aucun contenu trouvé</p>
+  } @else if (!this.markdownSrc) {
   <p class="text-white text-center" i18n>Aucun contenu trouvé</p>
   } @else {
   <div class="prose prose-md prose-slate dark:prose-invert max-w-none">
