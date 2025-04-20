@@ -10,15 +10,23 @@ import { MarkdownModule } from 'ngx-markdown';
 export class BlogPostComponent {
   slug: string;
   markdownSrc: string;
+  language: string;
 
   constructor(private route: ActivatedRoute) {
     this.slug = '';
     this.markdownSrc = '';
+    this.language = '';
   }
+
   ngOnInit() {
     this.slug = this.route.snapshot.paramMap.get('slug') || '';
+    const url = this.route.snapshot.url;
+    if (url.length >= 2) {
+      this.language = url[1].path;
+    }
+
     if (this.slug) {
-      this.markdownSrc = `/blog/fr/${this.slug}.md`;
+      this.markdownSrc = `/blog/${this.language}/${this.slug}.md`;
     }
   }
 
