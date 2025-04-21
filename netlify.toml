@@ -1,9 +1,10 @@
 [build]
-  command = "ng build && ng run portfolio:ssr"
-  publish = "dist/portfolio/browser"
+  command = "npm run build:netlify"
+  publish = "dist/portfolio"
 
 [build.environment]
   NETLIFY_USE_ANGULAR = "true"
+  NODE_VERSION = "20.10.0"
 
 [[plugins]]
   package = "@netlify/angular-runtime"
@@ -19,3 +20,26 @@
   from = "/"
   to = "/en-US"
   status = 302
+
+# Handle language-specific paths
+[[redirects]]
+  from = "/fr/*"
+  to = "/fr/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en-US/*"
+  to = "/en-US/index.html"
+  status = 200
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/fr/index.html"
+  status = 200
+  conditions = {Language = ["fr"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/en-US/index.html"
+  status = 200

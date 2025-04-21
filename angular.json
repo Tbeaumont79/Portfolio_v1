@@ -155,6 +155,26 @@
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js"
             ]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/portfolio/server",
+            "main": "src/main.server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            }
+          }
+        },
+        "ssr": {
+          "builder": "@angular-devkit/build-angular:ssr",
+          "options": {
+            "browserTarget": "portfolio:build:production",
+            "serverTarget": "portfolio:server:production"
+          }
         }
       }
     }
