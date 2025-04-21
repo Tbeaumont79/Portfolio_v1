@@ -1,6 +1,7 @@
 [build]
   command = "npm run build:netlify"
-  publish = "dist/portfolio"
+  publish = "dist/portfolio/browser"
+
 
 [build.environment]
   NETLIFY_USE_ANGULAR = "true"
