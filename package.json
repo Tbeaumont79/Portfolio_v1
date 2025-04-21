@@ -6,7 +6,7 @@
     "start": "ng serve",
     "prebuild": "node set-env.js",
     "build": "ng build --configuration production",
-    "build:netlify": "npm run build && cp -r dist/portfolio/server dist/portfolio/ && cp dist/portfolio/browser/fr/index.html dist/portfolio/server/index.server.html",
+    "build:netlify": "npm run build && cp dist/portfolio/browser/fr/index.html dist/portfolio/server/index.server.html",
     "build:ssr": "ng build && ng run portfolio:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
