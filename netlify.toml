@@ -6,6 +6,12 @@
   NETLIFY_USE_ANGULAR = "true"
   NODE_VERSION = "20.10.0"
 
+[[plugins]]
+  package = "@netlify/angular-runtime"
+
+[functions]
+  node_bundler = "esbuild"
+
 # Redirection pour la page d'accueil
 [[redirects]]
   from = "/"

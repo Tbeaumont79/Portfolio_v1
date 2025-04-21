@@ -39,18 +39,17 @@ if (frIndexPath) {
   console.error("ERREUR: Impossible de trouver l'index français.");
 }
 
-// Contenu du server.mjs
+// Version compatible avec Netlify Edge Functions - n'utilise pas fs
 const serverMjsContent = `import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import express from 'express';
-import fs from 'fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 
 // Vérifier si on est au niveau racine ou dans le dossier server
 let browserPath = '../browser';
-if (fs.existsSync(join(__dirname, 'browser'))) {
+if (process.env.NETLIFY) {
   browserPath = './browser';
 }
 
@@ -59,19 +58,6 @@ console.log("Chemin du répertoire browser:", join(__dirname, browserPath));
 // Servir les fichiers statiques depuis le répertoire browser
 app.use(express.static(resolve(__dirname, browserPath)));
 
-// Fonction pour trouver le fichier index adapté (csr ou normal)
-function findIndexFile(locale) {
-  const csrPath = join(__dirname, browserPath, locale, 'index.csr.html');
-  const normalPath = join(__dirname, browserPath, locale, 'index.html');
-
-  if (fs.existsSync(csrPath)) {
-    return csrPath;
-  } else if (fs.existsSync(normalPath)) {
-    return normalPath;
-  }
-  return null;
-}
-
 // Redirection vers index.html pour toutes les autres routes
 app.get('*', (req, res) => {
   // Support pour les locales multiples - vérification si la requête est pour en-US
@@ -79,22 +65,11 @@ app.get('*', (req, res) => {
     req.url.startsWith('/en-US') ||
     req.headers['accept-language']?.includes('en')
   ) {
-    const enIndexPath = findIndexFile('en-US');
-    if (enIndexPath) {
-      return res.sendFile(enIndexPath);
-    } else {
-      console.error("Index EN-US non trouvé");
-    }
+    return res.sendFile(join(__dirname, browserPath, 'en-US', 'index.html'));
   }
 
   // Par défaut en français
-  const frIndexPath = findIndexFile('fr');
-  if (frIndexPath) {
-    res.sendFile(frIndexPath);
-  } else {
-    console.error("Index FR non trouvé");
-    res.status(404).send('Index files not found');
-  }
+  res.sendFile(join(__dirname, browserPath, 'fr', 'index.html'));
 });
 
 const PORT = process.env.PORT || 4000;
