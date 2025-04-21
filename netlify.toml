@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:netlify"
+  command = "ng build && ng run portfolio:ssr"
   publish = "dist/portfolio/browser"
 
 [build.environment]
