@@ -1,11 +1,10 @@
 [build]
   command = "npm run build:netlify"
-  publish = "dist/portfolio"
+  publish = "dist/portfolio/browser"
 
 
 [build.environment]
   NETLIFY_USE_ANGULAR = "true"
-  NODE_VERSION = "20.10.0"
 
 [[plugins]]
   package = "@netlify/angular-runtime"
