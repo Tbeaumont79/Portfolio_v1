@@ -1,13 +1,10 @@
 [build]
   command = "npm run build:netlify"
-  publish = "dist/portfolio/browser"
-
+  publish = "dist/portfolio"
 
 [build.environment]
   NETLIFY_USE_ANGULAR = "true"
-
-[[plugins]]
-  package = "@netlify/angular-runtime"
+  NODE_VERSION = "20.10.0"
 
 # Redirection pour la page d'accueil
 [[redirects]]
@@ -21,7 +18,7 @@
   to = "/en-US"
   status = 302
 
-# Handle language-specific paths
+# SPA fallback pour chaque langue
 [[redirects]]
   from = "/fr/*"
   to = "/fr/index.html"
@@ -32,7 +29,7 @@
   to = "/en-US/index.html"
   status = 200
 
-# SPA fallback
+# SPA fallback général
 [[redirects]]
   from = "/*"
   to = "/fr/index.html"
