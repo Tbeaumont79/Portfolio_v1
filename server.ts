@@ -20,10 +20,7 @@ export function app(): express.Express {
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
-  server.get('/', (req, res) => {
-    const lang = req.acceptsLanguages('fr', 'en') || 'fr';
-    res.redirect(302, `/${lang}`);
-  });
+
   server.get(
     '**',
     express.static(browserDistFolder, {
@@ -35,12 +32,13 @@ export function app(): express.Express {
   // All regular routes use the Angular engine
   server.get('**', (req, res, next) => {
     const { protocol, originalUrl, baseUrl, headers } = req;
+    const lang = req.acceptsLanguages('fr', 'en-US') || 'fr';
 
     commonEngine
       .render({
         bootstrap,
         documentFilePath: indexHtml,
-        url: `${protocol}://${headers.host}${originalUrl}`,
+        url: `${protocol}://${headers.host}${originalUrl}/${lang}`,
         publicPath: browserDistFolder,
         providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
       })
