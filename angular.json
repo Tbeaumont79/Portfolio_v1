@@ -171,6 +171,18 @@
           "options": {
             "browserTarget": "portfolio:build:production",
             "serverTarget": "portfolio:server:production",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css",
+              "node_modules/prismjs/themes/prism-okaidia.css",
+              "node_modules/github-markdown-css/github-markdown.css",
+              "node_modules/prismjs/plugins/command-line/prism-command-line.css"
+            ],
             "scripts": [
               "node_modules/prismjs/prism.js",
               "node_modules/emoji-toolkit/lib/js/joypixels.min.js",
