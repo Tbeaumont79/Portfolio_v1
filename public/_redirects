@@ -6,8 +6,9 @@
 /fr/*  /fr/index.html  200
 /en-US/*  /en-US/index.html  200
 
-# Assurer l'accès aux assets
+# S'assurer que tous les assets sont accessibles
 /assets/*  /assets/:splat  200
+/content/*  /content/:splat  200
 
 # Fallback pour tous les autres chemins (évite les 404)
 /*  /index.html  200

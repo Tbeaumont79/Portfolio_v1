@@ -41,7 +41,7 @@
               {
                 "glob": "**/*.md",
                 "input": "src/content/blog",
-                "output": "/assets/blog"
+                "output": "/content/blog"
               }
             ],
             "styles": [
