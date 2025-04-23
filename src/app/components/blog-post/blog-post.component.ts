@@ -30,7 +30,7 @@ export class BlogPostComponent {
 
     if (this.slug && this.language) {
       const basePath = isDevMode() ? '.' : '';
-      this.markdownSrc = `${basePath}/blog/${this.language}/${this.slug}.md`;
+      this.markdownSrc = `${basePath}/content/blog/${this.language}/${this.slug}.md`;
       console.log('Loading markdown:', this.markdownSrc);
     } else {
       this.loadError = true;

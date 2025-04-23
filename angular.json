@@ -35,17 +35,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public/",
+                "output": "/"
               },
               {
                 "glob": "**/*.md",
-                "input": "src/content/blog/fr",
-                "output": "/fr/blog/fr"
-              },
-              {
-                "glob": "**/*.md",
-                "input": "src/content/blog/en",
-                "output": "/en-US/blog/en"
+                "input": "src/content/blog",
+                "output": "/assets/blog"
               }
             ],
             "styles": [
