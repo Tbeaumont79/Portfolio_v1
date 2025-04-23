@@ -25,5 +25,9 @@
   </head>
   <body class="bg-darkBackground">
     <app-root></app-root>
+    <script>
+      const lang = navigator.language.startsWith("fr") ? "fr" : "en-US";
+      window.location.href = `/${lang}/`;
+    </script>
   </body>
 </html>
