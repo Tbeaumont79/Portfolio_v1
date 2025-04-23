@@ -12,6 +12,14 @@ export const routes: Routes = [
     component: BlogPostComponent,
   },
   {
+    path: '/fr/blog/fr/:slug',
+    component: BlogPostComponent,
+  },
+  {
+    path: '/en-US/blog/fr/:slug',
+    component: BlogPostComponent,
+  },
+  {
     path: '',
     component: HomeComponent,
   },
