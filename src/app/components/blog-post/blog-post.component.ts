@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, isDevMode } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { CommonModule } from '@angular/common';
@@ -29,7 +29,8 @@ export class BlogPostComponent {
     }
 
     if (this.slug && this.language) {
-      this.markdownSrc = `/blog/${this.language}/${this.slug}.md`;
+      const basePath = isDevMode() ? '.' : '';
+      this.markdownSrc = `${basePath}/blog/${this.language}/${this.slug}.md`;
       console.log('Loading markdown:', this.markdownSrc);
     } else {
       this.loadError = true;

@@ -7,3 +7,16 @@
   from = "/en-US/*"
   to = "/en-US/index.html"
   status = 200
+
+# Redirection de la racine vers la locale appropriée
+[[redirects]]
+  from = "/"
+  to = "/fr/"
+  status = 302
+  conditions = {Language = ["fr*"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en-US/"
+  status = 302
+  force = true

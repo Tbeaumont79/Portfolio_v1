@@ -6,7 +6,8 @@
     "prebuild": "node set-env.js",
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:netlify": "./netlify-deploy.sh"
   },
   "private": true,
   "dependencies": {

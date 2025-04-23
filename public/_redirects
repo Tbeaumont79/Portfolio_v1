@@ -1,0 +1,10 @@
+# Redirections linguistiques pour la racine
+/  /fr/  302  Language=fr
+/  /en-US/  302
+
+# Gestion SPA pour chaque locale
+/fr/*  /fr/index.html  200
+/en-US/*  /en-US/index.html  200
+
+# Fallback pour tous les autres chemins (évite les 404)
+/*  /index.html  200
