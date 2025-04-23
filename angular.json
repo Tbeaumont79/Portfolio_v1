@@ -25,6 +25,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/",
             "localize": ["fr", "en-US"],
             "outputPath": "dist/portfolio",
             "index": "src/index.html",

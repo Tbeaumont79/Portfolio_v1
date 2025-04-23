@@ -13,10 +13,10 @@
   from = "/"
   to = "/fr/"
   status = 302
-  conditions = {Language = ["fr*"]}
+  force = true
 
 [[redirects]]
   from = "/"
   to = "/en-US/"
   status = 302
-  force = true
+  conditions = {Language = ["en-US*"]}
