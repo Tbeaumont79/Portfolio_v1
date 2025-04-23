@@ -37,12 +37,12 @@
               {
                 "glob": "**/*",
                 "input": "public/",
-                "output": "/"
+                "output": "./"
               },
               {
                 "glob": "**/*.md",
                 "input": "src/content/blog",
-                "output": "/content/blog"
+                "output": "./content/blog"
               }
             ],
             "styles": [
