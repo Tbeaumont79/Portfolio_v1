@@ -29,8 +29,8 @@ export class BlogPostComponent {
     }
 
     if (this.slug && this.language) {
-      const basePath = isDevMode() ? '.' : '';
-      this.markdownSrc = `${basePath}/content/blog/${this.language}/${this.slug}.md`;
+      const basePath = isDevMode() ? './' : '';
+      this.markdownSrc = `${basePath}content/blog/${this.language}/${this.slug}.md`;
       console.log(this.markdownSrc);
       console.log('Loading markdown:', this.markdownSrc);
     } else {
