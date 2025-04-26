@@ -4,7 +4,9 @@
   } @else if (!this.markdownSrc) {
   <p class="text-white text-center" i18n>Aucun contenu trouvé</p>
   } @else {
-  <div class="prose prose-md prose-slate dark:prose-invert max-w-none">
+  <div
+    class="prose max-w-[100%] prose-md prose-slate dark:prose-invert "
+  >
     <a
       [routerLink]="['/']"
       class="text-white text-md flex items-center gap-x-2 group hover:text-softPink"
