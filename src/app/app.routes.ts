@@ -12,11 +12,11 @@ export const routes: Routes = [
     component: BlogPostComponent,
   },
   {
-    path: '/fr/blog/fr/:slug',
+    path: 'fr/blog/fr/:slug',
     component: BlogPostComponent,
   },
   {
-    path: '/en-US/blog/fr/:slug',
+    path: 'en-US/blog/fr/:slug',
     component: BlogPostComponent,
   },
   {
