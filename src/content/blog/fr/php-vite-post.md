@@ -2,15 +2,15 @@
 
 <i>Temps de lecture : 5 minutes</i>
 
-# Introduction
+## Introduction
 
 Aujourd'hui en cours, mon professeur m'a demandé de créer une simple application CRUD avec PHP et MySQL. J'ai donc décidé de me lancer et d'apprendre à utiliser Vite avec PHP. L'idée principale était d'essayer d'installer Tailwind avec Vite sur mon projet et d'avoir accès au HMR et l'écosystème JavaScript dans mon projet PHP.
 
-## Petit rappel : qu'est-ce que Vite ?
+### Petit rappel : qu'est-ce que Vite ?
 
 Pour ceux qui ne connaissent pas, Vite est un outil de build qui permet de créer des applications web rapides et efficaces en optimisant automatiquement votre code et vos dépendances pendant le développement. Cet article n'entrera pas dans les détails concernant Vite. Si vous souhaitez plus d'informations, vous pouvez consulter la [documentation officielle](https://vitejs.dev/).
 
-# Comment utiliser Vite avec PHP
+## Comment utiliser Vite avec PHP
 
 Tout d'abord, nous devons initialiser le projet avec npm :
 

@@ -2,11 +2,11 @@
 
 <i>Reading time : 8 minutes</i>
 
-# 🌍 Enhancing Web Accessibility: Best Practices for Developers
+## 🌍 Enhancing Web Accessibility: Best Practices for Developers
 
 Accessibility (a11y) is essential for making the web inclusive for everyone, including people with disabilities. Here are some best practices and examples to help improve your website’s accessibility.
 
-## 🎨 Semantic HTML
+### 🎨 Semantic HTML
 
 Using proper HTML elements improves both accessibility and SEO.
 
@@ -18,7 +18,7 @@ Using proper HTML elements improves both accessibility and SEO.
 <button type="submit">Submit</button>
 ```
 
-## 🗣️ ARIA for Better Accessibility
+### 🗣️ ARIA for Better Accessibility
 
 ARIA (Accessible Rich Internet Applications) attributes help screen readers interpret content properly.
 
@@ -29,7 +29,7 @@ ARIA (Accessible Rich Internet Applications) attributes help screen readers inte
 </button>
 ```
 
-## 🎙️ Keyboard Navigation
+### 🎙️ Keyboard Navigation
 
 Ensure all interactive elements are keyboard-accessible.
 
@@ -42,7 +42,7 @@ modal.addEventListener("keydown", (e) => {
 });
 ```
 
-## 🌗 High Contrast & Readability
+### 🌗 High Contrast & Readability
 
 Ensure sufficient color contrast and text readability.
 
@@ -54,7 +54,7 @@ body {
 }
 ```
 
-## ✅ Conclusion
+### ✅ Conclusion
 
 Making your site accessible benefits everyone. By using semantic HTML, ARIA attributes, keyboard navigation, and high-contrast designs, you create a better experience for all users.
 
