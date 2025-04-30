@@ -4,7 +4,7 @@
 
 # Introduction
 
-Aujourd'hui à l'école, mon professeur m'a demandé de créer une simple application CRUD avec PHP et MySQL. J'ai donc décidé de me lancer et d'apprendre à utiliser Vite avec PHP. L'idée principale était d'essayer d'installer Tailwind avec Vite sur mon projet et d'avoir accès à l'écosystème JavaScript dans mon projet PHP.
+Aujourd'hui en cours, mon professeur m'a demandé de créer une simple application CRUD avec PHP et MySQL. J'ai donc décidé de me lancer et d'apprendre à utiliser Vite avec PHP. L'idée principale était d'essayer d'installer Tailwind avec Vite sur mon projet et d'avoir accès au HMR et l'écosystème JavaScript dans mon projet PHP.
 
 ## Petit rappel : qu'est-ce que Vite ?
 
