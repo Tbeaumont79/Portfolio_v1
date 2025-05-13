@@ -58,6 +58,7 @@ Pour chaque fichier PHP que vous souhaitez gérer avec Vite, vous devez l’ajou
 import { defineConfig } from "vite";
 import usePHP from "vite-plugin-php";
 import tailwindcss from "@tailwindcss/vite";
+
 export default defineConfig({
   plugins: [
     usePHP({
