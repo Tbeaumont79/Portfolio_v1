@@ -2,11 +2,11 @@
 
 <i>Temps de lecture : 8 minutes</i>
 
-## 🌍 Exploration des bonnes pratiques en accessibilité :
+# 🌍 Exploration des bonnes pratiques en accessibilité :
 
 L'accessibilité (a11y) est essentielle pour rendre le web inclusif pour tous, y compris les personnes en situation de handicap. Voici quelques bonnes pratiques et exemples pour améliorer l'accessibilité de votre site web.
 
-### 🎨 HTML sémantique
+## 🎨 HTML sémantique
 
 L'utilisation d'éléments HTML appropriés améliore à la fois l'accessibilité et le référencement.
 
@@ -18,7 +18,7 @@ L'utilisation d'éléments HTML appropriés améliore à la fois l'accessibilit�
 <button type="submit">Soumettre</button>
 ```
 
-### 🗣️ ARIA pour une meilleure accessibilité
+## 🗣️ ARIA pour une meilleure accessibilité
 
 Les attributs ARIA (Applications Internet Riches Accessibles) aident les lecteurs d'écran à interpréter correctement le contenu.
 
@@ -29,7 +29,7 @@ Les attributs ARIA (Applications Internet Riches Accessibles) aident les lecteur
 </button>
 ```
 
-### 🎙️ Navigation au clavier
+## 🎙️ Navigation au clavier
 
 Assurez-vous que tous les éléments interactifs sont accessibles au clavier.
 
@@ -42,7 +42,7 @@ modal.addEventListener("keydown", (e) => {
 });
 ```
 
-### 🌗 Contraste élevé et lisibilité
+## 🌗 Contraste élevé et lisibilité
 
 Assurez-vous d'un contraste de couleur suffisant et d'une bonne lisibilité du texte.
 
@@ -54,7 +54,7 @@ body {
 }
 ```
 
-### ✅ Conclusion
+## ✅ Conclusion
 
 Rendre votre site accessible bénéficie à tous. En utilisant du HTML sémantique, des attributs ARIA, une navigation au clavier et des designs à fort contraste, vous créez une meilleure expérience pour tous les utilisateurs.
 

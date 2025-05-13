@@ -2,15 +2,15 @@
 
 <i>Reading time : 10 minutes</i>
 
-## Introduction
+# Introduction
 
 Recently, i created a chat application using Symfony and Mercure. This blog post is dedicated to sharing that experience, highlighting the setup process and discussing the benefits of integrating Mercure into Symfony applications.
 
-### What is mercure
+## What is mercure
 
 Mercure is a robust open-source solution designed for real-time communications, celebrated for its speed and efficiency. It serves as a compelling alternative to conventional WebSocket services and complements REST and GraphQL APIs by delivering asynchronous capabilities. Mercure's core functionality leverages HTTP and SSE (Server-Sent Events), which are inherently supported by modern web and mobile applications alongside IoT devices.
 
-## Setup
+# Setup
 
 Before you start, ensure Docker Desktop is installed and running on your machine. Here's how you can proceed with setting up your Symfony project and Mercure.
 
@@ -42,7 +42,7 @@ You will find the container in the docker desktop app, and you can access it wit
 
 Make sure to customize your Mercure JWT secret in your `.env` file and `docker-compose.yaml` for production environments to ensure optimal security:
 
-### What is mercure hub ?
+## What is mercure hub ?
 
 ![alt mercureHubSchema](https://raw.githubusercontent.com/dunglas/mercure/master/spec/subscriptions.png)
 

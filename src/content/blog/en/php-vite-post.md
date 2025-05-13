@@ -2,15 +2,15 @@
 
 <i>Reading time : 5 minutes</i>
 
-## Introduction
+# Introduction
 
 Today at school my teatcher ask me to create a simple CRUD app with PHP and MySQL, so i decided to give it a try and learn how to use Vite with PHP. The main idea behind this is that i wanted to try to install tailwind with vite on my project and have access to the javascript Ecosystem in my php project.
 
-### Quick reminder what is Vite ?
+## Quick reminder what is Vite ?
 
 For those who don't know, Vite is a build tool that allows you to create fast and efficient web applications by automatically optimizing your code and dependencies during development. This post won't go in detail about Vite if you want more information you can read the [official documentation](https://vitejs.dev/).
 
-## How to use Vite with PHP
+# How to use Vite with PHP
 
 First we will need to init the project with npm :
 
