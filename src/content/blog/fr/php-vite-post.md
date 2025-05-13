@@ -46,5 +46,24 @@ Assurez-vous d'avoir ces scripts définis dans votre fichier package.json :
 
 Vous pouvez ensuite taper `npm run dev` pour démarrer le serveur de développement.
 
-Il devrait avoir démarré et vous devriez pouvoir accéder à l'application à l'adresse http://localhost:5173. Vous devriez voir votre fichier index.php dans le navigateur.
-Si vous retournez dans votre dossier de projet, vous verrez qu'un dossier caché a été créé appelé : .php-tmp, c'est là que Vite stockera les fichiers compilés.
+Le serveur devrait démarrer et vous devriez pouvoir accéder à l’application à l’adresse http://localhost:5173. Vous devriez voir le fichier index.php s’afficher dans le navigateur.
+
+Un dossier caché nommé .php-tmp aura été créé dans votre projet. C’est là que Vite stocke les fichiers compilés.
+
+# Déclaration des fichiers d’entrée
+
+Pour chaque fichier PHP que vous souhaitez gérer avec Vite, vous devez l’ajouter à l’option entry dans la configuration du plugin. Voici un exemple avec l’intégration de Tailwind CSS :
+
+```js
+import { defineConfig } from "vite";
+import usePHP from "vite-plugin-php";
+import tailwindcss from "@tailwindcss/vite";
+export default defineConfig({
+  plugins: [
+    usePHP({
+      entry: ["index.php", "app/auth/*.php", "app/dashboard/*.php", "app/dashboard/**/*.php", "app/databases/*.php", "app/utils/*.php"],
+    }),
+    tailwindcss(),
+  ],
+});
+```
