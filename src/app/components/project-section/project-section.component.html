@@ -27,6 +27,7 @@
                 height="20px"
                 src="icons/star.svg"
                 alt="a star icon"
+                loading="lazy"
               />
               <p class="text-lighttext text-sm">
                 {{ item["stargazers_count"] }}
@@ -38,6 +39,7 @@
                 height="20px"
                 src="icons/clock.svg"
                 alt="a clock icon"
+                loading="lazy"
               />
               <p class="text-lighttext text-[12px] md:text-sm lg:text-sm">
                 {{ item["created_at"] | date : "mediumDate" }}
