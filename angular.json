@@ -70,7 +70,7 @@
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js"
             ],
 
-            "prerender": false
+            "prerender": true
           },
           "configurations": {
             "production": {
