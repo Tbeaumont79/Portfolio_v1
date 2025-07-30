@@ -42,7 +42,6 @@
           />
         </div>
         <div class="flex flex-col justify-center items-center">
-          @defer {
           <img
             width="200px"
             height="200px"
@@ -51,8 +50,8 @@
             class="lg:hidden md:hidden"
             i18n-alt
             fetchpriority="high"
+            ngOptimizedImage
           />
-          }
         </div>
         <div class="flex flex-col">
           <div
@@ -181,7 +180,6 @@
           </div>
         </div>
       </div>
-      @defer {
       <div class="hidden md:flex lg:flex flex-col justify-center items-center">
         <img
           src="assets/rocket.svg"
@@ -190,6 +188,7 @@
           height="300px"
           class="hidden md:hidden lg:block"
           fetchpriority="high"
+          ngOptimizedImage
         />
         <img
           src="assets/rocket.svg"
@@ -197,9 +196,9 @@
           width="200px"
           height="200px"
           class="hidden md:bloc lg:hidden"
+          ngOptimizedImage
         />
       </div>
-      }
     </div>
   </div>
 </section>
