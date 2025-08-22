@@ -1,4 +1,4 @@
-<section id="home" class="flex flex-col justify-center mt-44">
+<div id="home" class="flex flex-col justify-center mt-44">
   <div
     class="hidden absolute right-20 top-32 h-40 w-40 rounded-full blur-4xl bg-gradient-to-r from-purpleBackground to-softPink md:block lg:block"
   ></div>
@@ -45,7 +45,7 @@
           <img
             width="200px"
             height="200px"
-            src="assets/rocket.svg"
+            src="assets/rocket_.avif"
             alt="icon de fusée violette en 3d"
             class="lg:hidden md:hidden"
             i18n-alt
@@ -180,25 +180,18 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:flex lg:flex flex-col justify-center items-center">
+      <div
+        class="hidden flex-col justify-center items-center md:block lg:block"
+      >
         <img
           src="assets/rocket_.avif"
           alt="rocket"
           width="300px"
           height="300px"
-          class="hidden md:hidden lg:block"
           fetchpriority="high"
-          ngOptimizedImage
-        />
-        <img
-          src="assets/rocket_.avif"
-          alt="rocket"
-          width="200px"
-          height="200px"
-          class="hidden md:bloc lg:hidden"
           ngOptimizedImage
         />
       </div>
     </div>
   </div>
-</section>
+</div>
