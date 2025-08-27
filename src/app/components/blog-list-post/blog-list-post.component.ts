@@ -44,6 +44,13 @@ export class BlogListPostComponent {
       description:
         'In this posts we are going to take a look at how to use Vite with PHP. Why it can be usefull and how to configure it.',
     },
+    {
+      slug: 'multi-tenancy-symfony-post',
+      title: 'Implement Multi Tenancy Architecture in Symfony',
+      date: 'Aug 25, 2025',
+      description:
+        'A guide to implementing multi-tenancy architecture in Symfony applications.',
+    },
   ];
   postsFr = [
     {
@@ -74,6 +81,13 @@ export class BlogListPostComponent {
       date: '8 avril 2025',
       description:
         'Dans cet article, nous allons examiner comment utiliser Vite avec PHP. Pourquoi cela peut être utile et comment le configurer.',
+    },
+    {
+      slug: 'multi-tenancy-symfony-post',
+      title: 'Implémenter une architecture multi-tenant avec Symfony',
+      date: '25 août 2025',
+      description:
+        'Un guide pour implémenter une architecture multi-tenant dans les applications Symfony.',
     },
   ];
 }
