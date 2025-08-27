@@ -1,5 +1,5 @@
 <img 
-    src="/assets/blog-post/multi-tenant.avif" 
+    src="assets/blog-post/multi-tenant.avif" 
     alt="Une image bannière qui représente le titre de cet article qui traite du multi-tenant dans Symfony"
     class="mx-auto rounded-lg shadow-lg mb-8"
 />

@@ -1,5 +1,5 @@
 <img 
-    src="/assets/blog-post/multi-tenant.avif" 
+    src="assets/blog-post/multi-tenant.avif" 
     alt="A banner image that represents the title of this post which is multi tenant in symfony"
     class="mx-auto rounded-lg shadow-lg mb-8"
 />
