@@ -27,6 +27,13 @@
           <context context-type="linenumber">44,51</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8492931820769484753" datatype="html">
+        <source> Développeur web fullstack passionné, je conçois des applications qui allient performance et expérience utilisateur. Curieux et engagé, je participe régulièrement à des meetups et échanges avec la communauté tech pour rester à la pointe des tendances et des bonnes pratiques. Ma philosophie : apprendre sans cesse, partager mes découvertes et avancer en équipe pour créer des solutions qui font la différence. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
+          <context context-type="linenumber">44,49</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1058337748709569011" datatype="html">
         <source> Articles </source>
         <context-group purpose="location">

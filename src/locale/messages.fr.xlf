@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="fr" target-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="359575385362475732" datatype="html">
         <source> A propos </source>
-        <target> About </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
           <context context-type="linenumber">10,11</context>
@@ -12,7 +11,6 @@
       </trans-unit>
       <trans-unit id="1317866661529257056" datatype="html">
         <source>Une photo de Thibault une jeune homme de 25 ans avec un grand sourire, il a des cheveux courts bruns et des yeux marrons, il porte des lunettes et un pull vert en laine.</source>
-        <target>A photo of Thibault, a 25-year-old young man with a big smile, he has short brown hair and brown eyes, wears glasses and a green wool sweater.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
           <context context-type="linenumber">23,24</context>
@@ -22,17 +20,8 @@
           <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7321185660964654021" datatype="html">
-        <source> Je crée des sites web captivants qui allient innovation et design centré sur l&apos;utilisateur. Au-delà du code, je m&apos;épanouis en restant à la pointe des tendances du secteur grâce à un apprentissage continu et à la collaboration avec la communauté des développeurs. Toujours motivé à relever des défis, j&apos;apporte un équilibre entre expertise technique et créativité à chaque projet. En dehors du code, je pratique l&apos;escalade de bloc et le tennis, des activités qui renforcent ma persévérance, ma concentration et mes compétences en travail d&apos;équipe. </source>
-        <target> I create captivating websites that combine innovation and user-centered design. Beyond coding, I thrive by staying at the forefront of industry trends through continuous learning and collaboration with the developer community. Always motivated to take on challenges, I bring a balance of technical expertise and creativity to each project. Outside of coding, I practice bouldering and tennis, activities that strengthen my perseverance, concentration, and teamwork skills. </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
-          <context context-type="linenumber">44,51</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8492931820769484753" datatype="html">
-        <source> Développeur web fullstack passionné, je conçois des applications qui allient performance et expérience utilisateur. Curieux et engagé, je participe régulièrement à des meetups et échanges avec la communauté tech pour rester à la pointe des tendances et des bonnes pratiques. Ma philosophie : apprendre sans cesse, partager mes découvertes et avancer en équipe pour créer des solutions qui font la différence. </source>
-        <target> Passionate fullstack web developer, I design applications that combine performance and user experience. Curious and committed, I regularly participate in meetups and exchanges with the tech community to stay on top of trends and best practices. My philosophy: constantly learning, sharing my discoveries and moving forward as a team to create solutions that make a difference. </target>
+        <source> Développeur web fullstack passionné, je conçois des applications qui allient performance et expérience utilisateur. Curieux et engagé, je participe régulièrement à des meetups et échanges avec la communauté tech pour rester à la pointe des tendances et des bonnes pratiques. Ma philosophie : apprendre sans cesse, partager mes découvertes et avancer en équipe pour créer des solutions qui font la différence. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about-section/about-section.component.html</context>
           <context context-type="linenumber">44,49</context>
@@ -40,7 +29,6 @@
       </trans-unit>
       <trans-unit id="1058337748709569011" datatype="html">
         <source> Articles </source>
-        <target> Articles </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blog-list-post/blog-list-post.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -48,23 +36,28 @@
       </trans-unit>
       <trans-unit id="2801673530081992138" datatype="html">
         <source> Lire plus </source>
-        <target> Read more </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blog-list-post/blog-list-post.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blog-list-post/blog-list-post.component.html</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="205650924468295303" datatype="html">
         <source>Aucun contenu trouvé</source>
-        <target>No content found</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blog-post/blog-post.component.html</context>
           <context context-type="linenumber">3,4</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blog-post/blog-post.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="4431114625643860642" datatype="html">
         <source>Developpeur web full stack</source>
-        <target>Full stack Wweb Developer</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -72,7 +65,6 @@
       </trans-unit>
       <trans-unit id="3105789727862510103" datatype="html">
         <source>Fait avec</source>
-        <target>Made with</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
           <context context-type="linenumber">10,11</context>
@@ -80,7 +72,6 @@
       </trans-unit>
       <trans-unit id="1133630423294447222" datatype="html">
         <source> par Thibault Beaumont </source>
-        <target> by Thibault Beaumont </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
           <context context-type="linenumber">19</context>
@@ -88,7 +79,6 @@
       </trans-unit>
       <trans-unit id="5788127619706890433" datatype="html">
         <source>Salut !</source>
-        <target>Hi there!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
           <context context-type="linenumber">13,14</context>
@@ -96,7 +86,6 @@
       </trans-unit>
       <trans-unit id="7706667041258953939" datatype="html">
         <source> Je suis Thibault Beaumont </source>
-        <target> I'm Thibault Beaumont </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
           <context context-type="linenumber">19</context>
@@ -104,7 +93,6 @@
       </trans-unit>
       <trans-unit id="5661847624956405493" datatype="html">
         <source> Développeur web full stack </source>
-        <target> Full stack web developer </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
           <context context-type="linenumber">26</context>
@@ -112,7 +100,6 @@
       </trans-unit>
       <trans-unit id="8968282164291395386" datatype="html">
         <source> Je crée des sites web intuitifs et engageants, en utilisant les dernières technologies pour donner vie à des idées. </source>
-        <target> I create intuitive and engaging websites, using the latest technologies to bring ideas to life. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
           <context context-type="linenumber">32,33</context>
@@ -120,7 +107,6 @@
       </trans-unit>
       <trans-unit id="232215243084366439" datatype="html">
         <source>icon de fleche</source>
-        <target>arrow icon</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
           <context context-type="linenumber">38,39</context>
@@ -128,7 +114,6 @@
       </trans-unit>
       <trans-unit id="4127543892443567785" datatype="html">
         <source>icon de fusée violette en 3d</source>
-        <target>3d purple rocket icon</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
           <context context-type="linenumber">49,50</context>
@@ -136,95 +121,85 @@
       </trans-unit>
       <trans-unit id="853659080485513520" datatype="html">
         <source> Télécharger mon CV </source>
-        <target> Download my CV </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5755528331483002339" datatype="html">
         <source> Me contacter </source>
-        <target> Hire me </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hero-section/hero-section.component.html</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5398873401666603210" datatype="html">
         <source>icon de croix</source>
-        <target>cross icon</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">5,6</context>
+          <context context-type="linenumber">10,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3476583629594890489" datatype="html">
         <source>Accueil</source>
-        <target>Home</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">10,11</context>
+          <context context-type="linenumber">15,16</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2823327110111393272" datatype="html">
         <source>Projets</source>
-        <target>Projects</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">14,15</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">45,46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2483235248567024420" datatype="html">
-        <source>A propos</source>
-        <target>About</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">18,19</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2483235248567024420" datatype="html">
+        <source>A propos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8615650319363734991" datatype="html">
         <source>Me contacter</source>
-        <target>Contact me</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">57,58</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3845037026510531652" datatype="html">
         <source>Ouvrir le menu principal</source>
-        <target>Open main menu</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
-          <context context-type="linenumber">64,65</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7291469011527874839" datatype="html">
-        <source>icon de menu burger</source>
-        <target>hamburger menu icon</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
           <context context-type="linenumber">67,68</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7291469011527874839" datatype="html">
+        <source>icon de menu burger</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3514369425765733248" datatype="html">
         <source> Mes projets </source>
-        <target> My projects </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/project-section/project-section.component.html</context>
           <context context-type="linenumber">7,8</context>
