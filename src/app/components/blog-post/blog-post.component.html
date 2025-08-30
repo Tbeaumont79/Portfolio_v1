@@ -1,15 +1,17 @@
-<div class="flex justify-center w-3/4 mx-auto py-8 mt-20">
+<div
+  class="flex justify-center w-full px-4 sm:w-5/6 lg:w-3/4 mx-auto py-8 mt-16 sm:mt-20"
+>
   @if (loadError) {
   <p class="text-white text-center" i18n>Aucun contenu trouvé</p>
   } @else if (!this.markdownSrc) {
   <p class="text-white text-center" i18n>Aucun contenu trouvé</p>
   } @else {
-  <div
-    class="prose max-w-[100%] prose-md prose-slate dark:prose-invert "
+    <div
+    class="prose max-w-[100%] prose-md prose-invert"
   >
     <a
       [routerLink]="['/']"
-      class="text-white text-md flex items-center gap-x-2 group hover:text-softPink"
+      class="text-white text-md flex items-center gap-x-2 group hover:text-softPink mb-4"
     >
       <svg
         class="-rotate-[90deg] w-6 h-6 text-white group-hover:text-softPink"
