@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { GithubService } from '../../services/github.service';
 import { DatePipe } from '@angular/common';
+import { GithubRepo } from '../../../types/githubRepos';
+import { Subscription } from 'rxjs';
+
 @Component({
   selector: 'app-project-section',
   imports: [DatePipe],
   templateUrl: './project-section.component.html',
 })
 export class ProjectSectionComponent {
-  myObservable: any;
-  repos: any = [];
-  filteredRepo: any[] = [];
+  private subscription!: Subscription;
+  repos: GithubRepo[] = [];
+  filteredRepo: GithubRepo[] = [];
   wantedRepo: string[] = [
     'Portfolio_v1',
     'docker-php-server',
@@ -19,10 +22,10 @@ export class ProjectSectionComponent {
   // appeler l'observable dans le html et faire un pipe async il se demerde pour les fuites de memory
   constructor(private githubService: GithubService) {}
   ngOnInit(): void {
-    this.myObservable = this.githubService.getRepos().subscribe({
-      next: (data) => {
+    this.subscription = this.githubService.getRepos().subscribe({
+      next: (data: GithubRepo[]) => {
         this.repos = data;
-        this.filteredRepo = this.repos.filter((repo: any) => {
+        this.filteredRepo = this.repos.filter((repo: GithubRepo) => {
           return this.wantedRepo.includes(repo.name);
         });
       },
@@ -31,6 +34,6 @@ export class ProjectSectionComponent {
     });
   }
   ngOnDestroy(): void {
-    this.myObservable.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }
