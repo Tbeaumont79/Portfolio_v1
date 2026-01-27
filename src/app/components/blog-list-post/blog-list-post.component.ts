@@ -30,14 +30,6 @@ export class BlogListPostComponent {
         'A guide to improving web accessibility with practical tips, examples, and best practices for developers.',
     },
     {
-      slug: 'myjourney-mercureandsymfony-post',
-      title:
-        'Building a Real-Time Chat App, my Journey with Mercure and Symfony',
-      date: 'Feb 23, 2025',
-      description:
-        "I've created a chat app using symfony and mercure, in this blog post i will tell you how to setup mercure with docker and symfony.",
-    },
-    {
       slug: 'php-vite-post',
       title: 'How to use Vite with PHP',
       date: 'Apr 8, 2025',
@@ -67,13 +59,6 @@ export class BlogListPostComponent {
       date: '1er février 2025',
       description:
         "Un guide pour améliorer l'accessibilité web avec des conseils pratiques, des exemples et les meilleures pratiques pour les développeurs.",
-    },
-    {
-      slug: 'decouverte-mercureandsymfony-post',
-      title: 'Découverte de Mercure et Symfony',
-      date: '23 février 2025',
-      description:
-        "J'ai créé une application de chat en utilisant Symfony et Mercure, dans cet article je vous expliquerai comment configurer Mercure avec Docker et Symfony.",
     },
     {
       slug: 'php-vite-post',
